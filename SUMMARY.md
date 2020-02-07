@@ -2,6 +2,9 @@
 
 * [Introduction](README.md)
 * [Community](community-1.md)
+* [Validator Staking Journey](validator-staking-journey/README.md)
+  * [Virtual Private Server \(VPS\) Setup](validator-staking-journey/virtual-private-server-vps-setup/README.md)
+    * [AWS](validator-staking-journey/virtual-private-server-vps-setup/aws.md)
 
 ## Harmony Overview
 
