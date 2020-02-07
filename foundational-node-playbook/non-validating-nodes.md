@@ -91,7 +91,7 @@ popd
 
 The expected output is like the following if it is running in the foreground.
 
-![output of running non-validating node](../../../.gitbook/assets/screen-shot-2019-09-12-at-8.55.13-pm.png)
+![output of running non-validating node](../.gitbook/assets/screen-shot-2019-09-12-at-8.55.13-pm.png)
 
 ### Setup non-validating node for other shard, ex shard 1
 

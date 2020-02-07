@@ -4,7 +4,7 @@ If you run a validator on Vultr the **current best options** are to either upgra
 
 Vultr offers block storage but currently only for New Jersey instances and tests made with **fio** tool showed poor IOPS performance for the block storage. Therefore block storage on Vultr is currently **not recommended.**
 
-![](../../../../.gitbook/assets/image-42.png)
+![](../../.gitbook/assets/image-42.png)
 
 Once you created your new instance like you are usually doing it on Vultr, **the fastest option with minimal downtime is to use the DB snapshot for fast state sync**. There is also the option to create a snapshot on Vultr but again is **not recommended** as **the** **overall downtime will be higher** than the method presented below. When you create a snapshot is recommended to stop active programs and reading/write processes, especially DB related in order to ensure data consistency. This means you will have to stop your validator and create the snapshot. Experiments showed that the snapshot will take longer than 30 Minutes.
 
@@ -16,11 +16,11 @@ The procedure for preparing your server to be validator with minimal downtime is
 
 **Wallet key file** - put your wallet file on the new server in the same folder is placed on the existing server: ~_&lt;your-username&gt;/.hmy/keystore_
 
-![](../../../../.gitbook/assets/image-7.png)
+![](../../.gitbook/assets/image-7.png)
 
 **BLS key file** - put your BLS key file on the new server under your user: ~_&lt;your-username&gt;_
 
-![](../../../../.gitbook/assets/image-17.png)
+![](../../.gitbook/assets/image-17.png)
 
 ### **Download the latest node.sh**
 
@@ -47,7 +47,7 @@ Use node.sh to download and extract DB snapshot for DB 0 and if necessary DB x, 
 ./node.sh -i X -b
 ```
 
-![example on syncing beacon chain \(shard0\)](../../../../.gitbook/assets/image-4.png)
+![example on syncing beacon chain \(shard0\)](../../.gitbook/assets/image-4.png)
 
 Press "y" to download and extract the harmony\_db\_0/ directory into the db/ directory.
 
