@@ -3,8 +3,16 @@
 * [Introduction](README.md)
 * [Community](community-1.md)
 * [Validator Staking Journey](validator-staking-journey/README.md)
-  * [Virtual Private Server \(VPS\) Setup](validator-staking-journey/virtual-private-server-vps-setup/README.md)
+  * [Setup your Validator Node](validator-staking-journey/virtual-private-server-vps-setup/README.md)
     * [AWS](validator-staking-journey/virtual-private-server-vps-setup/aws.md)
+  * [Creating your Validator Keys](validator-staking-journey/creating-your-validator-keys.md)
+  * [Starting your Validator Node](validator-staking-journey/starting-your-validator-node.md)
+  * [Registering as a Validator](validator-staking-journey/registering-as-a-validator.md)
+  * [Changing your Validator profile](validator-staking-journey/changing-your-validator-profile.md)
+  * [Staking your Validator](validator-staking-journey/staking-your-validator.md)
+  * [Unstaking your validator](validator-staking-journey/unstaking-your-validator.md)
+  * [Seeing all your Stakers](validator-staking-journey/seeing-all-your-stakers.md)
+  * [Collecting your rewards](validator-staking-journey/collecting-your-rewards.md)
 
 ## Harmony Overview
 
