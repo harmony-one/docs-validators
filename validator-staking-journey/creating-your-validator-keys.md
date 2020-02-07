@@ -2,12 +2,6 @@
 
 
 
-{% hint style="danger" %}
-ToDo
-
-* Review CLI commands and ensure references are valid for mainnet.
-{% endhint %}
-
 For working with all cli commands, the Harmony team has created a new tool, the Harmony CLI-tool.  
 With this tool you will be able to do everything on your node, like:
 
