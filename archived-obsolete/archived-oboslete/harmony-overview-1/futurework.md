@@ -1,6 +1,6 @@
 # Future Work
 
-![Harmony Open Consensus for 10 Billion](../.gitbook/assets/harmony10billion.png)
+![Harmony Open Consensus for 10 Billion](../../../.gitbook/assets/harmony10billion.png)
 
 ## Availability
 

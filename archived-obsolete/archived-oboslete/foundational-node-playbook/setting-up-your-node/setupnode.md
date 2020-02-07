@@ -12,19 +12,19 @@ Log into your AWS account
 
 Click on the top left bar “Services -&gt; Compute -&gt; EC2”
 
-![Harmony AWS-step3](../../.gitbook/assets/aws-step3.png)
+![Harmony AWS-step3](../../../../.gitbook/assets/aws-step3.png)
 
 Click on the blue button “Launch Instance”
 
-![Harmony AWS-step4](../../.gitbook/assets/aws-step4.png)
+![Harmony AWS-step4](../../../../.gitbook/assets/aws-step4.png)
 
 Select “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”
 
-![Harmony AWS-step5](../../.gitbook/assets/aws-step5.png)
+![Harmony AWS-step5](../../../../.gitbook/assets/aws-step5.png)
 
 Choose instance type “t3.small” \(you will have to scroll down to see it\)
 
-![](../../.gitbook/assets/screenshot-14.png)
+![](../../../../.gitbook/assets/screenshot-14.png)
 
 Click “Next: Configure Instance Details” at the bottom right of the page
 
@@ -36,7 +36,7 @@ Click “Next: Add Tags"
 
 In the “Key” input box put “Name” in “Value” put “harmony-fn”
 
-![Harmony AWS-step11](../../.gitbook/assets/aws-step11.png)
+![Harmony AWS-step11](../../../../.gitbook/assets/aws-step11.png)
 
 Click “Next: Configure Security Group”
 
@@ -44,7 +44,7 @@ On the default SSH with port 22, change the “Source” option to “Anywhere�
 
 Now you will need to add the following 2 ports: 6000, 9000. To add each of them, click “Add Rule”, under type select “Custom TCP Rule”, under “Port Range” put the port number, for “Source” select “Anywhere”. Repeat the process until you’ve added all the ports.
 
-![](../../.gitbook/assets/security_groups_aws-1.jpg)
+![](../../../../.gitbook/assets/security_groups_aws-1.jpg)
 
 Click “Review and Launch”
 
@@ -54,7 +54,7 @@ Click “Launch”. See Troubleshooting below if you are getting an error.
 
 In the pop-up window you will need to create a new key pair. Select “Create a new key pair” and then enter a name that you like, for example “harmony-fn”
 
-![Harmony AWS-step18](../../.gitbook/assets/aws-step18.png)
+![Harmony AWS-step18](../../../../.gitbook/assets/aws-step18.png)
 
 Click “Download Key Pair”
 
@@ -62,7 +62,7 @@ Click “Launch Instances”
 
 Click “View Instances”. Your new instance should be initializing, wait a few moments for it to get started.
 
-![Harmony AWS-step21](../../.gitbook/assets/aws-step21.jpeg)
+![Harmony AWS-step21](../../../../.gitbook/assets/aws-step21.jpeg)
 
 Keep this window open for future reference
 
@@ -70,17 +70,17 @@ Keep this window open for future reference
 
 Open a Terminal window on your computer. If you can’t find Terminal, search for it in your applications folder. \(If you are on a mac, they often hide Terminal inside of the “Utilities” folder within Applications.\)
 
-![Harmony key-step1](../../.gitbook/assets/key-step1.png)
+![Harmony key-step1](../../../../.gitbook/assets/key-step1.png)
 
 If you are on windows, download PuTTY or Git Bash to allow your computer to SSH into the AWS instance. For instructions on connecting to an EC2 instance using PuTTY follow the following resource from Amazon: [https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-2-connect-to-instance.html](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-2-connect-to-instance.html)
 
 Once Terminal is open, use the “cd” command to change your directory to where the key pair file \(ex: harmony-fn.pem\) that you generated is. \(Hint: it may be in your “Downloads” folder.\)
 
-![Harmony key-step2](../../.gitbook/assets/key-step2.jpeg)
+![Harmony key-step2](../../../../.gitbook/assets/key-step2.jpeg)
 
 Enter the command “chmod 400 harmony-fn.pem” \(this makes your key not publicly viewable\).
 
-![Harmony key-step3](../../.gitbook/assets/key-step3.png)
+![Harmony key-step3](../../../../.gitbook/assets/key-step3.png)
 
 Go back to your AWS window where you are viewing your instances, select your new instance \(it should be named “harmony-fn”\) and click “Connect” on the top bar
 
@@ -90,11 +90,11 @@ In the pop-up window, under the “Example:” header, copy the sample command t
  ssh -i "harmony-fn.pem" ec2-user@ec2-13-250-30-215.ap-southeast-1.compute.amazonaws.com
 ```
 
-![Harmony key-step5](../../.gitbook/assets/key-step5.png)
+![Harmony key-step5](../../../../.gitbook/assets/key-step5.png)
 
 Now connect to your instance by running the sample command you copied from the “Connect” page in your terminal window.
 
-![Harmony key-step6](../../.gitbook/assets/key-step6.png)
+![Harmony key-step6](../../../../.gitbook/assets/key-step6.png)
 
 It may ask you whether or not you want to continue connecting. Type in “yes” and hit enter.
 
@@ -126,7 +126,7 @@ Create a new ECDSA account address with the following command and input your pas
 ./wallet.sh new
 ```
 
-![Harmony key-step12](../../.gitbook/assets/key-step12.png)
+![Harmony key-step12](../../../../.gitbook/assets/key-step12.png)
 
 Create a BLS key pair with the following command \(private key hidden in image\):
 
@@ -134,11 +134,11 @@ Create a BLS key pair with the following command \(private key hidden in image\)
 ./wallet.sh blsgen
 ```
 
-![Harmony key-step13](../../.gitbook/assets/key-step13.png)
+![Harmony key-step13](../../../../.gitbook/assets/key-step13.png)
 
 You should have created an ECDSA account address starting with “one”. Send this account address to genesis@harmony.one, together with your discord handle with \#number suffix, \(i.e. “@Eugene Kim \| Harmony\#9608”\), also include your BLS public key from the previous step. Please use the subject line “mainnet”.
 
-![Harmony key-step14](../../.gitbook/assets/key-step14.png)
+![Harmony key-step14](../../../../.gitbook/assets/key-step14.png)
 
 Almost there! Now that we have your public key, we will include you as a validator in our genesis block. To verify if your account address is included in the genesis block check the following link:
 
@@ -158,7 +158,7 @@ Select "Instance State"
 
 Select "Stop"
 
-![](../../.gitbook/assets/screenshot-16-1.png)
+![](../../../../.gitbook/assets/screenshot-16-1.png)
 
 Once added to Harmony Mainnet, start your instance again by selecting "Start."
 
@@ -172,7 +172,7 @@ If you have satisfied the above, install tmux using the following command:
  sudo yum install -y tmux
 ```
 
-![Harmony network-step2](../../.gitbook/assets/network-step2.png)
+![Harmony network-step2](../../../../.gitbook/assets/network-step2.png)
 
 Create a virtual terminal session in tmux. \(This will hide all of your past entries to the command line.\)
 
@@ -180,7 +180,7 @@ Create a virtual terminal session in tmux. \(This will hide all of your past ent
  tmux new-session -s node
 ```
 
-![Harmony network-step3](../../.gitbook/assets/network-step3.png)
+![Harmony network-step3](../../../../.gitbook/assets/network-step3.png)
 
 Fetch the node script from our Github:
 
@@ -200,9 +200,9 @@ If your account account appears in the list, you will be able to join the testne
  sudo ./node.sh
 ```
 
-![](../../.gitbook/assets/sudonode.PNG)
+![](../../../../.gitbook/assets/sudonode.PNG)
 
-![Harmony network-step62](../../.gitbook/assets/network-step62.png)
+![Harmony network-step62](../../../../.gitbook/assets/network-step62.png)
 
 If you are joining after the network has been up for a while, it will take some time for you to sync to the latest block. Be patient and keep an eye out for a message that says “BINGO !!! Reached Consensus”
 
@@ -214,7 +214,7 @@ Next, exit tmux from the command line in order to check your balance: First hit 
 * Pressing **Ctrl+b** allows you to enter some of tmux’s commands. \(**Command+b** for mac\)
 * **d** is the tmux command for detach, returning you to the terminal before starting tmux. Press **d** after releasing **ctrl+b**, not at the same time.
 
-![Harmony network-step8](../../.gitbook/assets/network-step8.png)
+![Harmony network-step8](../../../../.gitbook/assets/network-step8.png)
 
 In the case you need to go back to the previous exited session, use the following command:
 
@@ -230,7 +230,7 @@ grep BINGO latest/zerolog*.log
 
 These take time to generate, repeat this command to see how times your node helped to reach consensus.
 
-![Harmony network-step10](../../.gitbook/assets/network-step10.png)
+![Harmony network-step10](../../../../.gitbook/assets/network-step10.png)
 
 Now let’s check the balance of your account to make sure you are receiving block rewards. Enter the following command:
 
@@ -238,7 +238,7 @@ Now let’s check the balance of your account to make sure you are receiving blo
 ./wallet.sh balances
 ```
 
-![](../../.gitbook/assets/balances.PNG)
+![](../../../../.gitbook/assets/balances.PNG)
 
 ## Tips/FAQ/Troubleshooting
 
@@ -254,7 +254,7 @@ Now let’s check the balance of your account to make sure you are receiving blo
 5. Generation of BLS keys is independent of your harmony “one” address
 6. If you are receiving an error message after attempting to launch the EC2 instance, it may be because your account is new. If this is the case, wait for a couple of minutes for Amazon to verify your account and try again. EX:
 
-![Harmony faq6](../../.gitbook/assets/faq6.png)
+![Harmony faq6](../../../../.gitbook/assets/faq6.png)
 
 1. Can I run multiple nodes on the same VM \(EC2 instance\)? Yes, you can create a new tmux using a different name than the one created in the example provided \(node\). From here you can start another node with a second address.
 2. Does running another node on the same VM \(EC2 instance\) reduce my costs? This is a question that we are currently answering. This question also brings into account an added risk of having all of your nodes running on a single point of failure.
@@ -278,7 +278,7 @@ Now let’s check the balance of your account to make sure you are receiving blo
 
    Change the directory to be that of your saved .pem file. This changes the access to this file so it is more private and can be securely used as a key.
 
-![Harmony faq10](../../.gitbook/assets/faq10.png)
+![Harmony faq10](../../../../.gitbook/assets/faq10.png)
 
 1. After running “sudo ./node.sh ACCOUNT\_ADDRESS” if you are getting error message account ID not found, that means that your account ID hasn’t yet been synced with our system. After your Discord and Email accounts have been verified through our emailing process with genesis@harmony.one, you should be able to access your account using this line.
 

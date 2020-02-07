@@ -8,17 +8,17 @@ Remember that BLS private–public key pair you made? That is one of the most im
 
 * Please back up your your BLS private key. The screenshot below shows the format of both the BLS public key and BLS private key.
 
-![Harmony BLS-step1](../../.gitbook/assets/bls-step1.png)
+![Harmony BLS-step1](../../../../.gitbook/assets/bls-step1.png)
 
 You also generated your Harmony wallet \(account\) ID along with a matching private key. You will need this private key later when you claim your earnings, so please keep it safe as you would with a real life wallet!
 
 * Your wallet ID starts with: one1
 
-![Harmony BLS-step21](../../.gitbook/assets/bls-step21.png)
+![Harmony BLS-step21](../../../../.gitbook/assets/bls-step21.png)
 
 * The matching private key is stored in the .hmy subdirectory where you run your node. \[.hmy/keystore folder is hidden on many computers, open the terminal ….\]
 
-  ![Harmony BLS-step22](../../.gitbook/assets/bls-step22.png)
+  ![Harmony BLS-step22](../../../../.gitbook/assets/bls-step22.png)
 
 Now that you have saved and kept your very important keys \(BLS and wallet private keys\) let's move onto some more safety tips!
 
