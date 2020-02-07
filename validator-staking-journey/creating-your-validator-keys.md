@@ -33,7 +33,7 @@ chmod u+x hmy.sh
 
 ## New wallet creation <a id="new-local-account-creation"></a>
 
-Creation of a new account is done as a function of a generated `bip39` mnemonic with 256 bits of entropy. You need to provide an account alias name of your choice \(keep it simple and clean\) and also need provide a passphrase:
+Creation of a new account is done as a function of a generated `bip39` mnemonic with 256 bits of entropy. You need to provide an account alias name of your choice \(keep it simple and clean\) and also need to  provide a passphrase:
 
 ```text
 ./hmy keys add example-account --use-own-passphrase
