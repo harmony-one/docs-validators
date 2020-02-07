@@ -1,7 +1,7 @@
 # Setup your Validator Node
 
 {% hint style="danger" %}
-To be done
+ToDo
 
 * Include Vultr and Google Cloud Documentation
 * Confirm Vultr is the recommended guide to follow
