@@ -1,3 +1,7 @@
+---
+description: Harmony Open Staking
+---
+
 # Introduction
 
 ![Harmony Day ONE Mainnet](.gitbook/assets/mainnetdayone.png)
