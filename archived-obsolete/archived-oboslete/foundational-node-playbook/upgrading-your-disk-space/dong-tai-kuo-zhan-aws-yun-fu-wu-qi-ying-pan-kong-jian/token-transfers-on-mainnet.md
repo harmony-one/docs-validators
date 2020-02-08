@@ -69,7 +69,7 @@ And here is that transaction on our explorer: [https://explorer.harmony.one/\#/t
 
 And the screenshot, just for good measure :\)
 
-![](../.gitbook/assets/image-33.png)
+![](../../../../../.gitbook/assets/image-33.png)
 
 **Creating a new wallet address**
 
