@@ -4,6 +4,12 @@ description: AWS Manual Setup Guide
 
 # AWS
 
+{% hint style="danger" %}
+ToDo
+
+* Creation of an AWS account
+{% endhint %}
+
 To launch your AWS instance, we will go through 3 steps.
 
 **Step 1: Launching your AWS Instance**

@@ -45,5 +45,5 @@ To re-attach to your tmux session where your node.sh is running please use the f
 tmux attach-session -t node
 ```
 
-More details on how to use tmux please click [here](https://docs.harmony.one/pangaea/help-section/tmux).
+More details on how to use tmux please click [here](../additional-information/reference/tmux.md).
 

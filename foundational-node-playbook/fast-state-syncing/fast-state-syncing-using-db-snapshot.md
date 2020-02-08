@@ -63,7 +63,7 @@ Use node.sh to download and extract DB snapshot for DB 0 and if necessary DB x, 
 ./node.sh -i X -b
 ```
 
-![example on syncing beacon chain \(shard0\)](../../../../.gitbook/assets/image-16.png)
+![example on syncing beacon chain \(shard0\)](../../.gitbook/assets/image-16.png)
 
 Choose `y` to download and extract the `harmony_db_0/` directory into the `db/` directory.
 

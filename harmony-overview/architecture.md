@@ -1,6 +1,6 @@
 # Technical Features
 
-![Harmony Architecture](../../../.gitbook/assets/viewchangeprotocol.jpg)
+![Harmony Architecture](../.gitbook/assets/viewchangeprotocol.jpg)
 
 ## Secure Sharding
 

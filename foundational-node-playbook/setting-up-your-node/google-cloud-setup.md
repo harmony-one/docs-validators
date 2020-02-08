@@ -6,19 +6,19 @@ This will walk you through the steps to launch your cloud instance on Google Clo
 
 ## Step 1: Launching your Google Cloud Instance <a id="step-1-launching-your-google-cloud-instance"></a>
 
-Go to [ https://cloud.google.com](../../../../) and click on “Get Started for Free” if you don’t have an account yet or on “Sign in” if you already have a Google Account. If you haven’t used Google Cloud yet, you will get a $300 USD dollars credit for 1 year!
+Go to [ https://cloud.google.com](../../) and click on “Get Started for Free” if you don’t have an account yet or on “Sign in” if you already have a Google Account. If you haven’t used Google Cloud yet, you will get a $300 USD dollars credit for 1 year!
 
 After you login and validate your credit card, you will be shown a page pretty much like this one. Click on “Compute Engine” and then in “VM Instances”.
 
-![](../../../../.gitbook/assets/image-40.png)
+![](../../.gitbook/assets/image-40.png)
 
 Click on the Create button to make a new instance
 
-![](../../../../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image.png)
 
 We recommend to name it something like "HarmonyFoundation” \(the instance name cannot be changed\). Select the Machine type as “Custom” and set up 2 vCPU’s and 4GB of Memory.
 
-![](../../../../.gitbook/assets/image-10.png)
+![](../../.gitbook/assets/image-10.png)
 
 For Pangaea, keep everything default after you have configured the cores and memory. Foundation node will need to change the disk size from 10 GB to 150 GB. Click on the change button on the boot disk section.
 
@@ -28,18 +28,18 @@ Click Create. Please wait a few minutes for your instance
 
 Once the instance is created. We will open 4 ingoing ports. To do this click on "nic0" as shown below. In the next page click on “Firewall rules” and after that on “CREATE FIREWALL RULE”.
 
-![](../../../../.gitbook/assets/image-26.png)
+![](../../.gitbook/assets/image-26.png)
 
-![](../../../../.gitbook/assets/image-41.png)
+![](../../.gitbook/assets/image-41.png)
 
 * TCP 6000
 * TCP 9000
 
-![](../../../../.gitbook/assets/ports_google_gcp.jpg)
+![](../../.gitbook/assets/ports_google_gcp.jpg)
 
 Now go back to the VM instances page and click on SSH. This will open a new window and connect via SSH to your instance.
 
-![](../../../../.gitbook/assets/image-1.png)
+![](../../.gitbook/assets/image-1.png)
 
 ## **Step 2: Connecting to your Google Cloud Instance and generating keys** <a id="step-2-connecting-to-your-google-cloud-instance-and-copying-keys"></a>
 
@@ -57,7 +57,7 @@ su
 
 This command will then ask you for your password from the step above. When entered correctly it will show you as root user.
 
-![](../../../../.gitbook/assets/image-20.png)
+![](../../.gitbook/assets/image-20.png)
 
 Before anything is recommended to update your system
 
@@ -94,7 +94,7 @@ Create a new ECDSA account address with the following command and input your pas
 ./wallet.sh new
 ```
 
-![Your walletID](../../../../.gitbook/assets/google-cloud-generate-wallet-id.PNG)
+![Your walletID](../../.gitbook/assets/google-cloud-generate-wallet-id.PNG)
 
 Create a BLS key pair with the following command \(private key hidden in image\):
 
@@ -102,13 +102,13 @@ Create a BLS key pair with the following command \(private key hidden in image\)
 ./wallet.sh blsgen
 ```
 
-![](../../../../.gitbook/assets/blskeygooglecloud.PNG)
+![](../../.gitbook/assets/blskeygooglecloud.PNG)
 
 Please keep your BLS private key with you! Do not move past this part until you have it saved somewhere safe with the passphrase.
 
 You should have created an ECDSA account address starting with “one”. Send this account address to genesis@harmony.one, together with your discord handle with \#number suffix, \(i.e. “@Eugene Kim \| Harmony\#9608”\), also include your BLS public key from the previous step. Please use the subject line “mainnet”.
 
-![](../../../../.gitbook/assets/image-9.png)
+![](../../.gitbook/assets/image-9.png)
 
 Almost there! Now that we have your public key, we will include you as a validator in our genesis block. To verify if your account address is included in the genesis block check the following link:
 
@@ -126,7 +126,7 @@ Create a virtual terminal session in tmux. \(This will hide all of your past ent
  tmux new-session -s node
 ```
 
-![](../../../../.gitbook/assets/image-31.png)
+![](../../.gitbook/assets/image-31.png)
 
 Fetch the node script from our Github:
 
@@ -146,7 +146,7 @@ If your account account appears in the list, you will be able to join the testne
  sudo ./node.sh
 ```
 
-![](../../../../.gitbook/assets/image-2.png)
+![](../../.gitbook/assets/image-2.png)
 
 If you are joining after the network has been up for a while, it will take some time for you to sync to the latest block. Be patient and keep an eye out for a message that says “BINGO !!! Reached Consensus”
 
@@ -155,7 +155,7 @@ Next, exit tmux from the command line in order to check your balance: First hit 
 * Pressing Ctrl+b allows you to enter some of tmux’s commands. \(Command+b for mac\)
 * d is the tmux command for detach, returning you to the terminal before starting tmux. Press d after releasing ctrl+b, not at the same time.
 
-![](../../../../.gitbook/assets/image-15.png)
+![](../../.gitbook/assets/image-15.png)
 
 In the case you need to go back to the previous exited session, use the following command:
 
@@ -171,7 +171,7 @@ grep BINGO latest/zerolog*.log
 
 These take time to generate, repeat this command to see how times your node helped to reach consensus.
 
-![](../../../../.gitbook/assets/image-43.png)
+![](../../.gitbook/assets/image-43.png)
 
 Now let’s check the balance of your account to make sure you are receiving block rewards. Enter the following command:
 
@@ -179,5 +179,5 @@ Now let’s check the balance of your account to make sure you are receiving blo
 ./wallet.sh balances
 ```
 
-![](../../../../.gitbook/assets/image-44.png)
+![](../../.gitbook/assets/image-44.png)
 

@@ -47,7 +47,7 @@ $ ./node2.sh -i 1 -b
 
 执行命令后如下图所示:
 
-![](../../../../.gitbook/assets/screen-shot-2019-09-18-at-4.12.31-pm.png)
+![](../../.gitbook/assets/screen-shot-2019-09-18-at-4.12.31-pm.png)
 
 输入 y 确认下载并将 harmony\_db\_X/ \(X为您的节点所在的分片编号\)目录解压缩到 db/ 目录中。
 
