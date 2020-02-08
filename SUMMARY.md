@@ -12,7 +12,7 @@
 * [Starting your Validator Node](validator-staking-journey/starting-your-validator-node.md)
 * [Registering as a Validator](validator-staking-journey/registering-as-a-validator.md)
 * [Changing your Validator profile](validator-staking-journey/changing-your-validator-profile.md)
-* [Staking your Validator](validator-staking-journey/staking-your-validator.md)
+* [Staking your Validator](validator/staking-your-validator.md)
 * [Unstaking your validator](validator-staking-journey/unstaking-your-validator.md)
 * [Seeing all your Stakers](validator-staking-journey/seeing-all-your-stakers.md)
 * [Collecting your rewards](validator-staking-journey/collecting-your-rewards.md)
