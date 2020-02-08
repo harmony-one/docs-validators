@@ -1,6 +1,10 @@
 # Validator Staking Journey
 
-The Validator Journey consists of the following steps
+{% hint style="info" %}
+Note: This guide is currently for our Validators to familiarize themselves with Open Staking in Harmony's  [**Open Staking Testnet**](https://explorer.os.hmny.io/#/) **and** will be updated for Mainnet prior to the release date until then for mainnet please continue to use [nodes.harmony.one](https://nodes.harmony.one/)
+{% endhint %}
+
+#### The Validator Journey consists of the following steps
 
 * [Setup Validator Node](../archived-obsolete/archived-oboslete/foundational-node-playbook/setting-up-your-node/)
 * [Creating your Validator Keys](creating-your-validator-keys.md)
