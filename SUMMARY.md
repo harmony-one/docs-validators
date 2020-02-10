@@ -16,6 +16,7 @@
 * [Unstaking your validator](validator-staking-journey/unstaking-your-validator.md)
 * [Seeing all your Stakers](validator-staking-journey/seeing-all-your-stakers.md)
 * [Collecting your rewards](validator-staking-journey/collecting-your-rewards.md)
+* [Cheat Sheet](validator/cheat-sheet.md)
 
 ## Monitoring and Reporting Tools
 
