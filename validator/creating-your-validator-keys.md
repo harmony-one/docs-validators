@@ -2,12 +2,6 @@
 
 
 
-{% hint style="danger" %}
-ToDo
-
-* Review CLI commands and ensure references are valid for mainnet.
-{% endhint %}
-
 For working with all cli commands, the Harmony team has created a new tool, the Harmony CLI-tool.  
 With this tool you will be able to do everything on your node, like:
 
@@ -36,7 +30,7 @@ chmod u+x hmy.sh
 Creation of a new account is done as a function of a generated `bip39` mnemonic with 256 bits of entropy. You need to provide an account alias name of your choice \(keep it simple and clean\) and also need to  provide a passphrase:
 
 ```text
-./hmy keys add example-account --use-own-passphrase
+./hmy keys add example-account --passphrase
 
 Enter passphrase:
 Repeat the passphrase:

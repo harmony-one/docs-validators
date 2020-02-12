@@ -8,7 +8,7 @@
 * [Validator Staking Journey](validator/validator-staking-journey.md)
 * [Setup your Validator Node](validator-staking-journey/virtual-private-server-vps-setup/README.md)
   * [AWS](validator-staking-journey/virtual-private-server-vps-setup/aws.md)
-* [Creating your Validator Keys](validator-staking-journey/creating-your-validator-keys.md)
+* [Creating your Validator Keys](validator/creating-your-validator-keys.md)
 * [Starting your Validator Node](validator/starting-your-validator-node.md)
 * [Registering as a Validator](validator-staking-journey/registering-as-a-validator.md)
 * [Changing your Validator profile](validator-staking-journey/changing-your-validator-profile.md)
