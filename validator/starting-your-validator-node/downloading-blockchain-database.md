@@ -1,8 +1,14 @@
+---
+description: Only for Mainnet
+---
+
 # Downloading Blockchain Database
 
 ## Downloading Blockchain Database - NOT FOR OSTN
 
 Before the node can run and join consensus to earn block rewards, it will need a recent copy of blockchain database.  In order to download and extract the blockchain database, run the following commands \(replace `BLSPUBKEY` with your 96-digit hexadecimal BLS public key as displayed by the `generate-bls-key` command above\):
+
+**NOTE THIS IS ONLY FOR MAINNET. IT WILL NOT WORK FOR OSTN.**
 
 ```text
 curl -sSfLO https://hmny-pnga.s3-us-west-2.amazonaws.com/db/download-pangaea-db.sh
