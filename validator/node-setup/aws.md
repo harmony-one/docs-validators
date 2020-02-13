@@ -127,8 +127,8 @@ When prompted whether or not you want to download packages, enter "y" for yes.
 Now install the following packages that will be needed to run Harmony by typing:
 
 ```text
-apt-get install dnsutils
-apt-get install tmux
+sudo yum install dnsutils
+sudo yum install tmux
 ```
 
 You will be asked to confirm if you would like to download and install these packages. Just press Y to confirm.
