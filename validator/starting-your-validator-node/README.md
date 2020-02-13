@@ -1,7 +1,5 @@
 # Starting your Validator Node
 
-## 
-
 {% hint style="info" %}
 Optionally for faster synching on mainnet you can [download the blockchain database](downloading-blockchain-database.md)
 {% endhint %}
@@ -10,17 +8,18 @@ Optionally for faster synching on mainnet you can [download the blockchain datab
 
 Use the following command to download the node.sh script:
 
+```text
+tmux new-session -s node
+```
+
 {% tabs %}
 {% tab title="OSTN" %}
 ```
-tmux new-session -s node
-
 bash <(curl -sSL https://raw.githubusercontent.com/SebastianJ/harmony-tools/master/install/install.sh) --node
 ln -s *.key bls.key
 ./node.sh -k bls.key -N staking -z -D -S
 
 # Detach your tmux session <CTL>b d
-
 ```
 {% endtab %}
 
