@@ -73,7 +73,7 @@ You will now need to generate your bls keys, to get your BLS Keys enter the comm
 
 With this done, you will get the "**public-key**", "**private-key**" and the "**encrypted-private-key-path**"
 
-## Downloading Blockchain Database
+## Downloading Blockchain Database - NOT FOR OSTN
 
 Before the node can run and join consensus to earn block rewards, it will need a recent copy of blockchain database.  In order to download and extract the blockchain database, run the following commands \(replace `BLSPUBKEY` with your 96-digit hexadecimal BLS public key as displayed by the `generate-bls-key` command above\):
 
@@ -104,6 +104,6 @@ You can check wallet balances with the following command if you are running a no
 or the following command if you're not running a node or not in sync:
 
 ```text
-./hmy --node="https://api.s0.p.hmny.io" balances one1f33w8c3dupm30p4fhemy89646xw7xpxcnmy6e4
+./hmy --node="https://api.s0.os.hmny.io" balances one1f33w8c3dupm30p4fhemy89646xw7xpxcnmy6e4
 ```
 
