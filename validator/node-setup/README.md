@@ -1,11 +1,4 @@
-# Setup your Validator Node
-
-{% hint style="danger" %}
-ToDo
-
-* Include Vultr and Google Cloud Documentation
-* Confirm Vultr is the recommended guide to follow
-{% endhint %}
+# Node setup
 
 We have written down the steps for setting up a Pangaea node for **AWS, Vultr and Google Cloud**, to make things as simple as possible!
 

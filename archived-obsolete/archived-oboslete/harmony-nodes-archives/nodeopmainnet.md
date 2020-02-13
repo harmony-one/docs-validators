@@ -10,7 +10,7 @@ Open terminal/git bas/PuTTY.
 
 Connect to your instance, using ssh \(check your aws ec2 instance for exact command\).
 
-![Harmony mainnet-step2](../../.gitbook/assets/mainnet-step2.png)
+![Harmony mainnet-step2](../../../.gitbook/assets/mainnet-step2.png)
 
 Download the latest version of the wallet script in your terminal.
 
@@ -23,13 +23,13 @@ chmod a+x wallet.sh
 
 Enter "**tmux new-session -s node**" to make a new tmux session named "node".
 
-![Harmony mainnet-step4](../../.gitbook/assets/mainnet-step4.png)
+![Harmony mainnet-step4](../../../.gitbook/assets/mainnet-step4.png)
 
 If you already have tmux up and running, you will receive the "**duplicate session**" error. To avoid this use "**tmux attach -d -t node**" as shown below:
 
-![Harmony mainnet-step51](../../.gitbook/assets/mainnet-step51.png)
+![Harmony mainnet-step51](../../../.gitbook/assets/mainnet-step51.png)
 
-![Harmony mainnet-step52](../../.gitbook/assets/mainnet-step52.png)
+![Harmony mainnet-step52](../../../.gitbook/assets/mainnet-step52.png)
 
 Copy and paste the following commands one at a time:
 
