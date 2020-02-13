@@ -4,7 +4,7 @@
 Please note that the below examples include addresses and BLS public keys that you need to swap out for your own.
 
 ```text
-./hmy --node="https://api.s0.p.hmny.io" staking create-validator --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --name John --identity john --website john@harmony.one --security-contact Alex --details "John the validator" --rate 0.1 --max-rate 0.9 --max-change-rate 0.05 --min-self-delegation 2 --max-total-delegation 30 --bls-pubkeys 0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611 --amount 3 --chain-id testnet --passphrase yourwalletpass
+./hmy --node="https://api.s0.os.hmny.io" staking create-validator --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --name John --identity john --website john@harmony.one --security-contact Alex --details "John the validator" --rate 0.1 --max-rate 0.9 --max-change-rate 0.05 --min-self-delegation 2 --max-total-delegation 30 --bls-pubkeys 0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611 --amount 3 --chain-id testnet --passphrase yourwalletpass
 ```
 
 Upon pressing enter it will prompt you to enter your bls password also. If everything goes well, you'll receive a tx hash in return.
@@ -77,7 +77,7 @@ tail -f latest/zerolog-validator-x.x.x.x-9000.log | grep -i BINGO
 
 
 ```text
-./hmy --node=https://api.s0.p.hmny.io/ blockchain validator information one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy
+./hmy --node=https://api.s0.os.hmny.io/ blockchain validator information one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy
 ```
 
 The output should show the validator information for validator one address one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy:
