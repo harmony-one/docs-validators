@@ -30,9 +30,9 @@ To launch your AWS instance, we will go through 3 steps.
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoyu2o6s4sjkvm34w_assets-2f-liqykccgux_ib7gddno.png)
 
-**5.** Choose instance type “t3.small.” \(In this example I have chosen t3a.medium. Later on the benchmark shows that t3.small performs just as well for a much lower price.\)
+**5.** Choose instance type “t3.small”.
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyg1xy24tofavfd0lx_awst3setup.png)
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-6.20.12-pm.png)
 
 **6.** Click “Next: Configure Instance Details” at the bottom right of the page.
 
