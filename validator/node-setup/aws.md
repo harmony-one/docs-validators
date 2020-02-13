@@ -98,9 +98,9 @@ Keep this window open for future reference.
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyh-cw-istac6cbvtd_awspangaeschmod.png)
 
-Go back to your AWS window where you are viewing your instances, select your new instance \(it should be named “pangaea-key”\) and click “Connect” on the top bar
+**4.** Go back to your AWS window where you are viewing your instances. Select your new "Pangaea-key" instance and click “Connect” on the top bar.
 
-In the pop-up window, under the “Example:” header, copy the sample command to connect to your ec2 instance. The command will look something like:
+**5.** In the pop-up window, under the “Example:” header, copy the sample command to connect to your ec2 instance. The command will look something like:
 
 ```text
 ssh -i "pangaea-key.pem" ec2-user@ec2-13-250-30-215.ap-southeast-1.compute.amazonaws.com
@@ -116,11 +116,13 @@ It may ask you whether or not you want to continue connecting. Type in “yes”
 
 Congratulations! You should be logged into your new AWS instance!
 
-Run the following command to make sure your instance is properly updated:
+ **6.** Run the following command to make sure your instance is properly updated:
 
 ```text
 sudo yum update
 ```
+
+When prompted whether or not you want to download packages, enter "y" for yes.
 
 Now install the following packages that will be needed to run Harmony by typing:
 
