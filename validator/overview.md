@@ -9,6 +9,7 @@ Note: This guide is currently designed for Harmony's [**Open Staking Testnet**](
 * [Node setup](https://docs.harmony.one/validators/validator/node-setup)
 * [Creating your Validator Keys](creating-your-validator-keys.md)
 * [Starting your Validator Node](starting-your-validator-node/)
+* [Creating your Wallet](creating-your-wallet.md)
 * [Registering as a Validator](registering-as-a-validator.md)
 * [Changing your Validator profile](changing-your-validator-profile.md)
 * [Staking your Validator](staking-your-validator.md)
