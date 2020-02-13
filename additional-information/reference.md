@@ -7,5 +7,5 @@
 
 ## Harmony Overview
 
-![Harmony fact sheet](../../.gitbook/assets/harmonyonepage.jpg)
+![Harmony fact sheet](../.gitbook/assets/harmonyonepage.jpg)
 

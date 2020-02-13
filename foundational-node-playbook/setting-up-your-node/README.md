@@ -16,5 +16,5 @@ Most coordination will happen via our foundational node Discord channel. Please 
 2. Telegram - [https://t.me/joinchat/HZniehM2XxaokN1QbglsaQ](https://t.me/joinchat/HZniehM2XxaokN1QbglsaQ) a. If you prefer Telegram join our foundational node channel at the link above.
 3. WeChat - a. If you prefer WeChat, scan this QR code. If the code has expired, notify Li \(li@harmony.one\)
 
-![](../../../../.gitbook/assets/assets_-lly1pi0rbm24ff14cv6_-lly1ycy2lqiqcljvelh_-lly1_05dvu_opxzmnzd_wechat-qr-code.jpeg.png)
+![](../../.gitbook/assets/assets_-lly1pi0rbm24ff14cv6_-lly1ycy2lqiqcljvelh_-lly1_05dvu_opxzmnzd_wechat-qr-code.jpeg.png)
 
