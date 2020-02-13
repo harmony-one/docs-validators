@@ -6,11 +6,13 @@ Optionally for faster synching on mainnet you can [download the blockchain datab
 
 ## Download Node
 
-Use the following command to download the node.sh script:
+**1.** Create a new tmux session called "node".
 
 ```text
 tmux new-session -s node
 ```
+
+**2.** From within your tmux session use the following command to download the node.sh script:
 
 {% tabs %}
 {% tab title="OSTN" %}
@@ -31,17 +33,17 @@ chmod u+x node.sh
 {% endtab %}
 {% endtabs %}
 
-
+**Note:** Run the "OSTN" commands if you are connecting to the Open Staking TestNet. If you are connecting to the mainnet, connect to mainnet.
 
 ## Run Node
 
-First you need to start a new tmux session again:
+**1.** Make sure you are still within your "node" tmux session. If you aren't, use the following command to re-attach your "node" tmux session.
 
 ```text
-tmux new-session -s node
+tmux attach -t node
 ```
 
-Then run the node.sh script with the following command. Once you do, it will ask for a passphrase for the BLS key file. Type your passphrase on the screen that follows and your node should be up and running:
+**2.**  node.sh script with the following command. Once you do, it will ask for a passphrase for the BLS key file. Type your passphrase on the screen that follows and your node should be up and running:
 
 ```text
 ./node.sh -S -k f98570a54c445867a84b0b83d52d2bda1e9e283b20e50aad269be196f2a4bea5fe01fe4ad956721b0b99b1ee78f65f02.key -N testnet -z
