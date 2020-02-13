@@ -4,10 +4,27 @@
 
 Use the following command to download the node.sh script:
 
-```text
+{% tabs %}
+{% tab title="OSTN" %}
+```
+tmux new-session -s node
+
+bash <(curl -sSL https://raw.githubusercontent.com/SebastianJ/harmony-tools/master/install/install.sh) --node
+ln -s *.key bls.key
+./node.sh -k bls.key -N staking -z -D -S
+
+# Detach your tmux session <CTL>b d
+
+```
+{% endtab %}
+
+{% tab title="MAINNET" %}
+```
 curl -LO https://raw.githubusercontent.com/harmony-one/harmony/pangaea/scripts/node.sh
 chmod u+x node.sh
 ```
+{% endtab %}
+{% endtabs %}
 
 
 
