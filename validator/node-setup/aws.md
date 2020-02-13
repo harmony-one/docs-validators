@@ -16,53 +16,51 @@ To launch your AWS instance, we will go through 3 steps.
 
 ## **Step 1: Launching your AWS Instance**
 
-If you don’t already have an AWS account, register one at[ https://aws.amazon.com](https://aws.amazon.com/)
+**1.** If you don’t already have an AWS account, register one at[ https://aws.amazon.com](https://aws.amazon.com/).
 
-Click on the top left bar “Services -&gt; Compute -&gt; EC2”
+**2.** Once you have set up and logged into your AWS account, click on the top left bar “Services -&gt; Compute -&gt; EC2".
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoh9qalwq7nrztaqh_assets-2f-liqykccgux_ib7gddno.png)
 
-Click on the blue button “Launch Instance”
+**3.** Click on the blue button “Launch Instance".
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoorxg-dkasj2ahjd_assets-2f-liqykccgux_ib7gddno.png)
 
-Select “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”
+**4.** Select “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”.
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoyu2o6s4sjkvm34w_assets-2f-liqykccgux_ib7gddno.png)
 
-Choose instance type “t3.small”\(In this example I have chosen t3a.medium, later on the benchmark shows that t3.small performs just as well for a much lower price\)
+**5.** Choose instance type “t3.small.” \(In this example I have chosen t3a.medium. Later on the benchmark shows that t3.small performs just as well for a much lower price.\)
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyg1xy24tofavfd0lx_awst3setup.png)
 
-Click “Next: Configure Instance Details” at the bottom right of the page
+**6.** Click “Next: Configure Instance Details” at the bottom right of the page.
 
-Nothing to change here, so click “Next: Add Storage”
+**7.** Don't change anything on this page, just click “Next: Add Storage” at the bottom right of the page.
 
-Change the “Size \(GiB\)” category to 30
+**8.** Change the “Size \(GiB\)” category to 30
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-llepmin1yovvgnzyeiy_unnamed.png)
 
-Click “Next: Add Tags
+**9.** Click “Next: Add Tags".
 
-In the “Key” input box put “Name” in “Value” put “Pangaea-key”
+**10.** Click "Add Tag." Then, in the “Key” input box put “Name” in “Value” put “Pangaea-key”.
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleqf6sfapejt6e_ruu_capture.png)
 
-Click “Next: Configure Security Group”
+**11.** Click “Next: Configure Security Group.”
 
-On the default SSH with port 22, change the “Source” option to “Anywhere”  
-Now you will need to add the following 2 ports:
+**12.** On the default SSH with port 22, change the “Source” option to “Anywhere.”
 
-▪ TCP 6000  
-▪ TCP 9000
+**13.** Click "Add Rule". Under "Type" select "Custom TCP Rule", under "Port Range" put "6000" and under "Source" select "Anywhere".
 
-To add each of them, click “Add Rule”, under type select “Custom TCP Rule”, under “Port Range” put the port number, for “Source” select “Anywhere”. Repeat the process until you’ve added all the ports.
+**14.** Click "Add Rule" again. This time, under "Type" select "Custom TCP Rule", under "Port Range" put "9000" and under "Source" select "Anywhere".
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-lw56fxoeyv0yr4pucg__-lw56p4wvhdd5sbawfho_security_groups_aws.jpg)
 
-Click “Review and Launch”  
-Ignore warnings such as “your security group is open to the world” or “your instance configuration is not eligible for free tier”  
-In the pop-up window you will need to create a new key pair. Select “Create a new key pair” and then enter a name that you like, for example “Pangaea-key”
+**15.** Click “Review and Launch” and then click "Launch". \(Note: Ignore warnings such as “your security group is open to the world” or “your instance configuration is not eligible for free tier.”\)
+
+**17.** In the pop-up window you will need to create a new key pair. Select “Create a new key pair” and then enter a name that you like, for example “Pangaea-key”
 
 ![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleqxd-n79fd0kkmcf3_capture.png)
 
