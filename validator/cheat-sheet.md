@@ -35,8 +35,6 @@ curl -LO https://harmony.one/hmycli && mv hmycli hmy && chmod +x hmy
 # Generate your BLS Key
 ./hmy keys generate-bls-key
 
-
-
 #### Download and run NODE using https://harmony.one/node2.sh #####
 
 # Start a tmux session
@@ -102,6 +100,21 @@ LD_LIBRARY_PATH=. ./harmony -version
 ./hmy --node="https://api.s0.os.hmny.io" blockchain validator all | grep one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
 ./hmy --node="https://api.s0.os.hmny.io" blockchain validator information one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
 
+# Seeing all your delegators
+./hmy --node https://api.s0.os.hmny.io/ blockchain delegation by-validator one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 
+
+# Monitoring your rewards
+./hmy --node https://api.s0.os.hmny.io/ blockchain delegation by-delegator one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
+
+# Collecting your rewards
+
+./hmy --node="https://api.s0.os.hmny.io" balances one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
+./hmy --node="https://api.s0.os.hmny.io" staking collect-rewards --delegator-addr one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 --chain-id testnet
+./hmy --node="https://api.s0.os.hmny.io" balances one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
+
+# Unstaking your validator
+
+
 # Changing your validator profile
 
 # Staking your validator
@@ -111,10 +124,6 @@ LD_LIBRARY_PATH=. ./harmony -version
 # Check if your bid was succesful
 
 # Unstaking your validator
-
-# Seeing all your stakers
-
-# Monitoring your rewards
 
 # Collectiing your rewards
 
