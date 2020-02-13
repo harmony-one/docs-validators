@@ -2,9 +2,19 @@
 
 ## **Un-delegation can be performed using Harmony CLI as follows:**
 
+{% tabs %}
+{% tab title="OSTN" %}
 ```
-./hmy --node="https://api.s0.p.hmny.io" staking undelegate --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --amount 0 --chain-id testnet --passphrase (yourwalletpass)
+./hmy --node="https://api.s0.os.hmny.io" staking undelegate --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --amount 0 --chain-id testnet --passphrase (yourwalletpass)
 ```
+{% endtab %}
+
+{% tab title="mainnet" %}
+```
+./hmy --node="https://api.s0.t.hmny.io" staking undelegate --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --amount 0 --chain-id mainnet --passphrase (yourwalletpass)
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 

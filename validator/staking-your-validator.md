@@ -2,9 +2,21 @@
 
 Staking can be performed using Harmony CLI to delegate tokens to a validator. You can delegate to your own validator or to someone else:
 
-```text
-./hmy --node="https://api.s0.p.hmny.io" staking delegate --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --amount 0 --chain-id testnet --passphrase (yourwalletpass)
+{% tabs %}
+{% tab title="OSTN" %}
 ```
+./hmy --node="https://api.s0.os.hmny.io" staking delegate --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --amount 0 --chain-id testnet --passphrase (yourwalletpass)
+```
+{% endtab %}
+
+{% tab title="mainnet" %}
+```
+./hmy --node="https://api.s0.t.hmny.io" staking delegate --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --validator-addr one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy --amount 0 --chain-id mainnet --passphrase (yourwalletpass)
+
+
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 

@@ -1,5 +1,11 @@
 # Starting your Validator Node
 
+## 
+
+{% hint style="info" %}
+Optionally for faster synching on mainnet you can [download the blockchain database](downloading-blockchain-database.md)
+{% endhint %}
+
 ## Download Node
 
 Use the following command to download the node.sh script:
@@ -62,5 +68,5 @@ To re-attach to your tmux session where your node.sh is running please use the f
 tmux attach-session -t node
 ```
 
-More details on how to use tmux please click [here](../additional-information/reference/tmux.md).
+More details on how to use tmux please click [here](../../additional-information/reference/tmux.md).
 

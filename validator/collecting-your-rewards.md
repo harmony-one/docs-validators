@@ -2,9 +2,19 @@
 
 Collecting rewards can be performed using Harmony CLI as follows:
 
+{% tabs %}
+{% tab title="OSTN" %}
 ```text
-./hmy --node="https://api.s0.p.hmny.io" staking collect-rewards --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --chain-id testnet --passphrase
+./hmy --node="https://api.s0.os.hmny.io" staking collect-rewards --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --chain-id testnet --passphrase
 ```
+{% endtab %}
+
+{% tab title="mainnet" %}
+```
+./hmy --node="https://api.s0.t.hmny.io" staking collect-rewards --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --chain-id testnet --passphrase
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 

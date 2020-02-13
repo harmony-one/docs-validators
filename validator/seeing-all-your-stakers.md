@@ -4,9 +4,19 @@
 
 All delegations that are associated with a validator can be queried using Harmony CLI as follows:
 
+{% tabs %}
+{% tab title="OSTN" %}
 ```text
-./hmy --node="https://api.s0.p.hmny.io" blockchain delegation by-validator one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy
+./hmy --node="https://api.s0.os.hmny.io" blockchain delegation by-validator one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy
 ```
+{% endtab %}
+
+{% tab title="mainnet" %}
+```
+./hmy --node="https://api.s0.t.hmny.io" blockchain delegation by-validator one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy
+```
+{% endtab %}
+{% endtabs %}
 
 The output should show the delegations for the given validator:
 
