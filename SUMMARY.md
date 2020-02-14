@@ -8,6 +8,7 @@
 * [Overview](validator/overview.md)
 * [Node setup](validator/node-setup/README.md)
   * [AWS](validator/node-setup/aws.md)
+  * [Choosing a cloud provider](validator/node-setup/choosing-a-cloud-provider.md)
 * [Creating your Validator BLS Keys](validator/creating-your-validator-keys.md)
 * [Starting your Validator Node](validator/starting-your-validator-node/README.md)
   * [Downloading Blockchain Database](validator/starting-your-validator-node/downloading-blockchain-database.md)
