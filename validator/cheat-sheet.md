@@ -86,11 +86,6 @@ LD_LIBRARY_PATH=. ./harmony -version
 ./hmy keys location
 
 
-### Fund your validator account ###
-./hmy keys import-private-key 55e0f13728e11da46e49d90ef738b091c906e9c9b5c1663ffdeb2266cde7cb1f jwfunder
-./hmy transfer --node https://api.s0.os.hmny.io --from one14hd35aj7xvuq3vg4grnv2umkxkazcmjq68hpwh --to one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 --chain-id testnet --from-shard 0 --to-shard 0 --amount 100
-
-
 # Register your validator
 ./hmy --node="https://api.s0.os.hmny.io" staking create-validator --validator-addr one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 --name JohnWhittonV1 --identity johnIdentityV1 --website john@harmony.one --security-contact John --details "John the validator Shard 1" --rate 0.05 --max-rate 0.8 --max-change-rate 0.02 --min-self-delegation 10 --max-total-delegation 100 --bls-pubkeys 3bdc1c12828cdea5e9fa7bdd6ea808e2587ccf7c7a694f5437162b9d9496c74995470ad3d049f672bfdf79ee05e7bc14 --amount 30 --chain-id testnet
 
