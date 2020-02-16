@@ -37,6 +37,15 @@ You will now need to generate your bls keys, to get your BLS Keys enter the comm
 
 With this done, you will get the "**public-key**", "**private-key**" and the "**encrypted-private-key-path**"
 
+#### Checking which shard your BLS key is for
+
+You can check which shard your key is for by using the following command
+
+```text
+./hmy utility shard-for-bls be23bc3c93fe14a25f3533feee1cff1c60706845a4907c5df58bc19f5d1760bfff06fe7c9d1f596b18fdf529e0508e0a --node https://api.s0.os.hmny.io 
+{"shard-id":1}
+```
+
 ## Checking Wallet Balances
 
 You can check wallet balances with the following command if you are running a node and are synced:
