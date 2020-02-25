@@ -1,5 +1,9 @@
 # Registering as a Validator
 
+{% hint style="info" %}
+**Note registering as a validator requires you have ONE tokens** in the wallet you are using for registration. OSTN is currently using pre-funded accounts. To gain access to funds in OSTN you can reach out on discord [foundational nodes channel](https://discord.gg/nyPcdPC). Moving forward a faucet  with funding instructions will be available. 
+{% endhint %}
+
 **A validator can be created using Harmony CLI \(hmy\) as follows:**  
 Please note that the below examples include addresses and BLS public keys that you need to swap out for your own.
 

@@ -11,7 +11,7 @@
   * [Choosing a cloud provider](validator/node-setup/choosing-a-cloud-provider.md)
 * [Creating your Validator BLS Keys](validator/creating-your-validator-keys.md)
 * [Starting your Validator Node](validator/starting-your-validator-node/README.md)
-  * [Downloading Blockchain Database](validator/starting-your-validator-node/downloading-blockchain-database.md)
+  * [Downloading Blockchain Database  \(Mainnet Only\)](validator/starting-your-validator-node/downloading-blockchain-database.md)
 * [Creating your Wallet](validator/creating-your-wallet.md)
 * [Registering as a Validator](validator/registering-as-a-validator.md)
 * [Changing your Validator profile](validator/changing-your-validator-profile.md)

@@ -17,9 +17,9 @@ tmux new-session -s node
 {% tabs %}
 {% tab title="OSTN" %}
 ```
-bash <(curl -sSL https://raw.githubusercontent.com/SebastianJ/harmony-tools/master/install/install.sh) --node
-ln -s *.key bls.key
-./node.sh -k bls.key -N staking -z -D -S
+curl -LO https://harmony.one/node2.sh
+mv node2.sh node.sh
+chmod a+x node.sh
 
 # Detach your tmux session <CTL>b d
 ```

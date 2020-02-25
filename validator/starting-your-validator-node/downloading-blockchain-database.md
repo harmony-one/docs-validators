@@ -2,7 +2,7 @@
 description: Only for Mainnet
 ---
 
-# Downloading Blockchain Database
+# Downloading Blockchain Database  \(Mainnet Only\)
 
 ## Downloading Blockchain Database - NOT FOR OSTN
 
