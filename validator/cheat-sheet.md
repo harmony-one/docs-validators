@@ -52,25 +52,10 @@ chmod a+x node.sh
 
 #### END Download and run NODE using https://harmony.one/node2.sh #####
 
-
-#### Download and run node using P-OPS approach ####
-
-tmux new-session -s node
-
-bash <(curl -sSL https://raw.githubusercontent.com/SebastianJ/harmony-tools/master/install/install.sh) --node
-ln -s *.key bls.key
-./node.sh -k bls.key -N staking -z -D -S
-
-# Detach your tmux session <CTL>b d
-
-#### END Download and run node using P-OPS approach ####
-
 # Check the version of your harmony binary
 # It should align with http://watchdog.hmny.io/report-staking version on the left
 # e.g. Version-v5546-master-20191208.0-169-g3c4d5074
 LD_LIBRARY_PATH=. ./harmony -version
-
-
 
 #### Createing your Wallet and Staking ####
 # Create your validator wallet
@@ -85,6 +70,9 @@ LD_LIBRARY_PATH=. ./harmony -version
 # Show the location of the keys (you should copy this file to a safe backup)
 ./hmy keys location
 
+# Fund your validator
+curl -X GET http://ec2-3-133-82-52.us-east-2.compute.amazonaws.com/fund?address=one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
+#{"success":true,"balances":[{"shard":0,"balance":"101000"},{"shard":1,"balance":"100000"},{"shard":2,"balance":"100000"}]}
 
 # Register your validator
 ./hmy --node="https://api.s0.os.hmny.io" staking create-validator --validator-addr one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 --name JohnWhittonV1 --identity johnIdentityV1 --website john@harmony.one --security-contact John --details "John the validator Shard 1" --rate 0.05 --max-rate 0.8 --max-change-rate 0.02 --min-self-delegation 10 --max-total-delegation 100 --bls-pubkeys 3bdc1c12828cdea5e9fa7bdd6ea808e2587ccf7c7a694f5437162b9d9496c74995470ad3d049f672bfdf79ee05e7bc14 --amount 30 --chain-id testnet
