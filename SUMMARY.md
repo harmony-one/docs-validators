@@ -19,6 +19,7 @@
 * [Unstaking your validator](validator/unstaking-your-validator.md)
 * [Seeing all your Stakers](validator/seeing-all-your-stakers.md)
 * [Collecting your rewards](validator/collecting-your-rewards.md)
+* [Using staking.harmony.one](validator/using-staking.harmony.one.md)
 * [Cheat Sheet](validator/cheat-sheet.md)
 
 ## Monitoring and Reporting Tools
