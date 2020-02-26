@@ -33,7 +33,13 @@ Select Load Unpacked a pop up file selector will appear select the unzipped fold
 
 #### Import your private key into the Harmony Extension
 
-* Open in the 
+* Open the Harmony extension
+
+![Open the Harmony Extension](../.gitbook/assets/selectharmonyextension.png)
+
+* Add another account
+* Select Private Key
+* Paste your private key
 
 #### Log in to staking.harmony.one
 
