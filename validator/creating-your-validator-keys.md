@@ -46,17 +46,3 @@ You can check which shard your key is for by using the following command
 {"shard-id":1}
 ```
 
-## Checking Wallet Balances
-
-You can check wallet balances with the following command if you are running a node and are synced:
-
-```text
-./hmy balances one1f33w8c3dupm30p4fhemy89646xw7xpxcnmy6e4
-```
-
-or the following command if you're not running a node or not in sync:
-
-```text
-./hmy --node="https://api.s0.os.hmny.io" balances one1f33w8c3dupm30p4fhemy89646xw7xpxcnmy6e4
-```
-
