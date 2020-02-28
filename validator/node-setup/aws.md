@@ -32,7 +32,7 @@ To launch your AWS instance, we will go through 3 steps.
 
 **5.** Choose instance type “t3.small”.
 
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-6.20.12-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-02-12-at-6.20.12-pm%20%281%29.png)
 
 **6.** Click “Next: Configure Instance Details” at the bottom right of the page.
 
@@ -40,7 +40,7 @@ To launch your AWS instance, we will go through 3 steps.
 
 **8.** Change the “Size \(GiB\)” category to 30
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-llepmin1yovvgnzyeiy_unnamed.png)
+![](../../.gitbook/assets/screen-shot-2020-02-27-at-4.01.10-pm.png)
 
 **9.** Click “Next: Add Tags".
 
@@ -72,7 +72,7 @@ To launch your AWS instance, we will go through 3 steps.
 
 **21.** Congratulations your instance is up and running! Now it's time to connect to your instance and 
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleracmn7pbdpnpbeia_assets-2f-liqykccgux_ib7gddno.png)
+![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleracmn7pbdpnpbeia_assets-2f-liqykccgux_ib7gddno%20%281%29.png)
 
 Keep this window open for future reference.
 
