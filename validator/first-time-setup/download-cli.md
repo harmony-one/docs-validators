@@ -1,4 +1,4 @@
-# Creating your Validator BLS Keys
+# Download CLI
 
 For working with all CLI commands, the Harmony team has created a new tool, the Harmony CLI-tool. With this tool you will be able to do everything on your node, like:
 

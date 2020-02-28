@@ -1,4 +1,4 @@
-# Using staking.harmony.one
+# Delegating on staking explorer
 
 ### Overview
 
@@ -21,7 +21,7 @@ You can install the Harmony Extension from the chrome store [here](https://chrom
 
 * Open the Harmony extension
 
-![Open the Harmony Extension](../.gitbook/assets/selectharmonyextension.png)
+![Open the Harmony Extension](../../.gitbook/assets/selectharmonyextension.png)
 
 * Add another account
 * Select Private Key

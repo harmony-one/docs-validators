@@ -1,4 +1,4 @@
-# Registering as a Validator
+# Create validator
 
 {% hint style="info" %}
 **Note registering as a validator requires you have ONE tokens** in the wallet you are using for registration. OSTN is currently using pre-funded accounts. To gain access to funds in OSTN you can reach out on discord [foundational nodes channel](https://discord.gg/nyPcdPC). Moving forward a faucet  with funding instructions will be available. 

@@ -1,4 +1,4 @@
-# Node setup
+# Cloud setup
 
 We have written down the steps for setting up a Pangaea node for **AWS, Vultr and Google Cloud**, to make things as simple as possible!
 

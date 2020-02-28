@@ -1,4 +1,4 @@
-# Staking your Validator
+# Delegating via CLI
 
 Staking can be performed using Harmony CLI to delegate tokens to a validator. You can delegate to your own validator or to someone else:
 

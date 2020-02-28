@@ -1,4 +1,4 @@
-# Creating your Wallet
+# Create ONE address
 
 ## New wallet creation <a id="new-local-account-creation"></a>
 

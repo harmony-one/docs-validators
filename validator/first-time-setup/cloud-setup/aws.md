@@ -20,19 +20,19 @@ To launch your AWS instance, we will go through 3 steps.
 
 **2.** Once you have set up and logged into your AWS account, click on the top left bar “Services -&gt; Compute -&gt; EC2".
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoh9qalwq7nrztaqh_assets-2f-liqykccgux_ib7gddno.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoh9qalwq7nrztaqh_assets-2f-liqykccgux_ib7gddno.png)
 
 **3.** Click on the blue button “Launch Instance".
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoorxg-dkasj2ahjd_assets-2f-liqykccgux_ib7gddno.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoorxg-dkasj2ahjd_assets-2f-liqykccgux_ib7gddno.png)
 
 **4.** Select “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”.
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoyu2o6s4sjkvm34w_assets-2f-liqykccgux_ib7gddno.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleoyu2o6s4sjkvm34w_assets-2f-liqykccgux_ib7gddno.png)
 
 **5.** Choose instance type “t3.small”.
 
-![](../../.gitbook/assets/screen-shot-2020-02-12-at-6.20.12-pm%20%281%29.png)
+![](../../../.gitbook/assets/screen-shot-2020-02-12-at-6.20.12-pm%20%281%29.png)
 
 **6.** Click “Next: Configure Instance Details” at the bottom right of the page.
 
@@ -40,13 +40,13 @@ To launch your AWS instance, we will go through 3 steps.
 
 **8.** Change the “Size \(GiB\)” category to 30
 
-![](../../.gitbook/assets/screen-shot-2020-02-27-at-4.01.10-pm.png)
+![](../../../.gitbook/assets/screen-shot-2020-02-27-at-4.01.10-pm.png)
 
 **9.** Click “Next: Add Tags".
 
 **10.** Click "Add Tag." Then, in the “Key” input box put “Name” in “Value” put “Pangaea-key”.
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleqf6sfapejt6e_ruu_capture.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleqf6sfapejt6e_ruu_capture.png)
 
 **11.** Click “Next: Configure Security Group.”
 
@@ -56,13 +56,13 @@ To launch your AWS instance, we will go through 3 steps.
 
 **14.** Click "Add Rule" again. This time, under "Type" select "Custom TCP Rule", under "Port Range" put "9000" and under "Source" select "Anywhere".
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-lw56fxoeyv0yr4pucg__-lw56p4wvhdd5sbawfho_security_groups_aws.jpg)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-lw56fxoeyv0yr4pucg__-lw56p4wvhdd5sbawfho_security_groups_aws.jpg)
 
 **15.** Click “Review and Launch” and then click "Launch". \(Note: Ignore warnings such as “your security group is open to the world” or “your instance configuration is not eligible for free tier.”\)
 
 **17.** In the pop-up window you will need to create a new key pair. Select “Create a new key pair” and then enter a name that you like, for example “Pangaea-key”
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleqxd-n79fd0kkmcf3_capture.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleqxd-n79fd0kkmcf3_capture.png)
 
 **18.** Click “Download Key Pair” and save the key file somewhere you'll remember.
 
@@ -72,7 +72,7 @@ To launch your AWS instance, we will go through 3 steps.
 
 **21.** Congratulations your instance is up and running! Now it's time to connect to your instance and 
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleracmn7pbdpnpbeia_assets-2f-liqykccgux_ib7gddno%20%281%29.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-lleracmn7pbdpnpbeia_assets-2f-liqykccgux_ib7gddno%20%281%29.png)
 
 Keep this window open for future reference.
 
@@ -84,19 +84,19 @@ Keep this window open for future reference.
 
 **Note:** If you can’t find Terminal, search for it in your applications folder. If you are on a mac, they often hide Terminal inside of the “Utilities” folder within Applications.
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-llerpyudvu-nb4zlb4d_assets-2f-liqykccgux_ib7gddno.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llevl4cczjjcxws1wwy_-llerpyudvu-nb4zlb4d_assets-2f-liqykccgux_ib7gddno.png)
 
 **For Windows:** Download Putty or Git Bash to allow your computer to SSH into the AWS instance. For instructions on connecting to an EC2 instance using Putty use the following resource from Amazon:[ https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-2-connect-to-instance.html](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-2-connect-to-instance.html)
 
 **2.** Once Terminal is open, use the `cd` command to change your directory to where the key pair file \(Pangaea-key.pem\) that you generated is. Hint it may be in your “Downloads” folder.
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llygjvgjiwe8kk2l6wf_awscddownlaods.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llygjvgjiwe8kk2l6wf_awscddownlaods.png)
 
 **3.** Enter the command `chmod 400 Pangaea-key.pem` \(this makes your key not publicly viewable\).
 
 **Note:** On Mac, your pem file may have been changed to a .txt file so the correct command on Mac would be: `chmod 400 Pangaea-key.pem.txt`
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyh-cw-istac6cbvtd_awspangaeschmod.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyh-cw-istac6cbvtd_awspangaeschmod.png)
 
 **4.** Go back to your AWS window where you are viewing your instances. Select your new "Pangaea-key" instance and click “Connect” on the top bar.
 
@@ -108,11 +108,11 @@ ssh -i "pangaea-key.pem" ec2-user@ec2-13-250-30-215.ap-southeast-1.compute.amazo
 
 Now connect to your instance by running the sample command you copied from the “Connect” page in your terminal window.
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyi-hhjtxylmj_532y_awspangaeassh.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyi-hhjtxylmj_532y_awspangaeassh.png)
 
 It may ask you whether or not you want to continue connecting. Type in “yes” and hit enter.
 
-![](../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyieuvvkczfcrmaujp_awspangaeaconnected.png)
+![](../../../.gitbook/assets/assets_-lldqlxk8e45wuh1wh4h_-llyz1j_-40h7bndrwxd_-llyieuvvkczfcrmaujp_awspangaeaconnected.png)
 
 Congratulations! You should be logged into your new AWS instance!
 
