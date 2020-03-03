@@ -17,6 +17,7 @@ This example is using the Open Staking Test Network and actual private keys. Do 
 # Create your AWS Instance
 # Have a terminal tool like ITERM2
 # Download your .pem file to a directory of your choosing
+# chmod 400 [.pem file]
 #### END PRE-REQUISITES ####
 
 #### Iniital Set up ####
