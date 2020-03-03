@@ -49,6 +49,8 @@ chmod a+x node.sh
 ./node.sh -S -N staking -z -k be1d3bc4c5bc185bd12226912372007ae7baa573dcf1e7182e13728db121001cf33d6fd80969c39312eb50cf5b090d87.key
 
 # Detach your tmux session <CTRL>+b, then d
+# To get back to the tmux session
+tmux attach-session -t node
 
 #### END Download and run NODE using https://harmony.one/node.sh #####
 
