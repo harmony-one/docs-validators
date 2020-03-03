@@ -46,18 +46,18 @@ mv node2.sh node.sh
 chmod a+x node.sh
 
 # Run your node - NOTE : Replace the BLS key below with your BLS key
-./node.sh -S -N staking -k be1d3bc4c5bc185bd12226912372007ae7baa573dcf1e7182e13728db121001cf33d6fd80969c39312eb50cf5b090d87.key -z
+./node.sh -S -N staking -z -k be1d3bc4c5bc185bd12226912372007ae7baa573dcf1e7182e13728db121001cf33d6fd80969c39312eb50cf5b090d87.key
 
-# Detach your tmux session <CTL>b d
+# Detach your tmux session <CTRL>+b, then d
 
-#### END Download and run NODE using https://harmony.one/node2.sh #####
+#### END Download and run NODE using https://harmony.one/node.sh #####
 
 # Check the version of your harmony binary
 # It should align with http://watchdog.hmny.io/report-staking version on the left
 # e.g. Version-v5546-master-20191208.0-169-g3c4d5074
 LD_LIBRARY_PATH=. ./harmony -version
 
-#### Createing your Wallet and Staking ####
+#### Creating your Wallet and Staking ####
 # Create your validator wallet
 ./hmy keys add johnv1-account
 
@@ -71,13 +71,30 @@ LD_LIBRARY_PATH=. ./harmony -version
 ./hmy keys location
 
 # Fund your validator
-curl -X GET http://ec2-3-133-82-52.us-east-2.compute.amazonaws.com/fund?address=one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-#{"success":true,"balances":[{"shard":0,"balance":"101000"},{"shard":1,"balance":"100000"},{"shard":2,"balance":"100000"}]}
+curl -X GET https://faucet.os.hmny.io/fund?address=one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
+#{"success":true,"balances":[{"shard":0,"balance":"1000"},{"shard":1,"balance":"0"},{"shard":2,"balance":"0"},{"shard":3,"balance":"0"}]}
 
 # Register your validator
 ./hmy --node="https://api.s0.os.hmny.io" staking create-validator --validator-addr one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 --name JohnWhittonV1 --identity johnIdentityV1 --website john@harmony.one --security-contact John --details "John the validator Shard 1" --rate 0.05 --max-rate 0.8 --max-change-rate 0.02 --min-self-delegation 10 --max-total-delegation 100 --bls-pubkeys 3bdc1c12828cdea5e9fa7bdd6ea808e2587ccf7c7a694f5437162b9d9496c74995470ad3d049f672bfdf79ee05e7bc14 --amount 30 --chain-id testnet
 
-# {"transaction-receipt":"0x8396f56d0c9252777cd3a9c289bbcf7e9faf7bd3d0f2a3fc6f5375ae4a415443"}
+# {
+#  "id": "21",
+#  "jsonrpc": "2.0",
+#  "result": {
+#    "blockHash": "0x5d44cfb6d85bbf81e2dcb0b6a8986522d443c5d6c9af1c43d1ad49efb9eac78a",
+#    "blockNumber": "0x2e3",
+#    "contractAddress": null,
+#    "cumulativeGasUsed": "0x512f00",
+#    "gasUsed": "0x512f00",
+#    "logs": [],
+#    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+#    "sender": "one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4",
+#    "status": "0x1",
+#    "transactionHash": "0xd20009ae47177202983d90838340e3a5c3d9b113a95e32e4cbda2b2e9cc89ac4",
+#    "transactionIndex": "0x0",
+#    "type": 0
+#  }
+#}
 
 # Check your validator has been registered
 ./hmy --node="https://api.s0.os.hmny.io" blockchain validator all | grep one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
