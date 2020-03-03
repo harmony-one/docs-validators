@@ -54,6 +54,10 @@ tmux attach-session -t node
 
 #### END Download and run NODE using https://harmony.one/node.sh #####
 
+# Check that your node is syncing
+./hmy blockchain latest-header
+# And check that the block is greater than 1
+
 # Check the version of your harmony binary
 # It should align with http://watchdog.hmny.io/report-staking version on the left
 # e.g. Version-v5546-master-20191208.0-169-g3c4d5074
