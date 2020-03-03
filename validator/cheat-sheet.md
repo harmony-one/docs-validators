@@ -46,6 +46,12 @@ curl -LO https://harmony.one/node2.sh
 mv node2.sh node.sh
 chmod a+x node.sh
 
+# If you already ran a validator & OSTN was refreshed
+sudo rm -rf harmony_db_*
+sudo rm -rf .dht*
+sudo rm -rf harmony
+sudo rm -rf md5sum.txt
+
 # Run your node - NOTE : Replace the BLS key below with your BLS key
 ./node.sh -S -N staking -z -k be1d3bc4c5bc185bd12226912372007ae7baa573dcf1e7182e13728db121001cf33d6fd80969c39312eb50cf5b090d87.key
 
