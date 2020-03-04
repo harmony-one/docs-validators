@@ -11,6 +11,8 @@ The CLI will prompt you to enter your BLS key file password. Only the `--validat
 
 `--validator-addr` is the validator address that you want to edit
 
+`--active true` to set validator as eligible to be elected
+
 `--name` to change the name displayed on the Staking Explorer
 
 `--identity` to change the identity field
@@ -30,8 +32,6 @@ The CLI will prompt you to enter your BLS key file password. Only the `--validat
 `--remove-bls-key` to remove a BLS public key associated with your validator
 
 `--add-bls-key` to add another BLS public key to your validator 
-
-`--active` to set validator eligibility for consensus committee selection
 
 {% hint style="info" %}
 `--validator-addr`is the only field that is required.
