@@ -11,7 +11,6 @@ You can edit your validator’s information using the CLI with the following com
     --remove-bls-key 0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611 \
     --add-bls-key 0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611 \
     --chain-id testnet --passphrase
-
 ```
 
 The CLI will prompt you to enter your BLS key file password. Only the `--validator-addr` field is required; all other fields are optional.
