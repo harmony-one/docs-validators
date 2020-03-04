@@ -3,7 +3,7 @@
 You can delegate tokens to a validator using the following command.
 
 ```text
-./hmy --node="https://api.s0.os.hmny.io" staking undelegate \
+./hmy --node="https://api.s0.os.hmny.io" staking delegate \
     --delegator-addr [ONE ADDRESS] --validator-addr [ONE ADDRESS] \
     --amount [AMOUNT] --passphrase
 ```

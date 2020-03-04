@@ -44,7 +44,7 @@ The CLI will prompt you to enter your BLS key file password.
 
 `--website` will be displayed on the Staking Explorer
 
-`--max-change-rate` is the maximum change that the validator can change their commission rate
+`--max-change-rate` is the maximum increase the validator can add to their commission rate
 
 `--max-rate` is the maximum commission rate that the validator can set
 
@@ -54,10 +54,12 @@ The CLI will prompt you to enter your BLS key file password.
 
 `--min-self-delegation` is the minimum amount of stake the validator must delegate to itself
 
-{% hint style="info" %}
-If you want to have spaces in your arguments, wrap the line in quotes 
+{% hint style="danger" %}
+`--max-rate` and `--max-change-rate` can not be changed later.
+{% endhint %}
 
-`--details "John The Validator"`
+{% hint style="danger" %}
+
 {% endhint %}
 
 ### When does the validator become active?
