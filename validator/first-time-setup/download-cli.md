@@ -6,11 +6,6 @@ description: Command-line interface to interact with Harmony blockchain
 
 To interact with your node, we have developed the HMY CLI. With it, you will be able to do everything in your terminal
 
-* Creating a wallet
-* Checking balances
-* Create your Validator
-* Create your delegator
-
 ## Download Harmony CLI
 
 #### Linux Download:
@@ -151,34 +146,12 @@ hmy utility shard-for-bls 2d61379e44a772e5757e27ee2b3874254f56073e6bd226eb8b1603
 
 ## Troubleshooting
 
-Frequently encountered problems:
+Frequently encountered errors:
 
 ```text
-$ ./hmy cookbook
+./hmy cookbook
 -bash: ./hmy: cannot execute binary file: Exec format error
 
 # Make sure you downloaded the right version for your OS.
-```
-
-## Creating a new BLS key for your Node
-
-You will now need to generate your BLS key, to get your BLS Keys enter the command:
-
-```text
-./hmy keys generate-bls-key
-```
-
-1. Give your passphrase when asked \(can hit return if you don't want to create a passphrase\)
-2. Confirm the passphrase \(please save your password\)
-
-With this done, you will get the "**public-key**", "**private-key**" and the "**encrypted-private-key-path**"
-
-#### Checking which shard your BLS key is for
-
-You can check which shard your key is for by using the following command
-
-```text
-./hmy utility shard-for-bls [YOUR PUBLIC KEY] --node https://api.s0.os.hmny.io 
-{"shard-id":1}
 ```
 

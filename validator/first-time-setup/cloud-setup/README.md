@@ -1,6 +1,12 @@
-# Cloud setup
+---
+description: How to setup & connect to your cloud instance
+---
 
-While running a local Harmony node is possible and encouraged, most validators run their nodes on cloud service providers. This section will explain how to set up your node on common cloud providers [**AWS**](aws.md), **Vultr** and **Google Cloud.**
+# Cloud Guides
+
+We have written a guide for setting up a Harmony node for [Amazon Web Services \(AWS\)](aws.md) to make things as simple as possible!
+
+If you're new to cloud providers, take a look at our comparison of [cloud providers](../../../extras/choosing-a-cloud-provider.md).
 
 If you are curious to know which cloud provider is right for you, read the ****[**Choosing a cloud provider section**](../../../extras/choosing-a-cloud-provider.md) in the Extras section.
 

@@ -1,27 +1,30 @@
-# Create ONE address
+# Creating A Wallet
 
-## New wallet creation <a id="new-local-account-creation"></a>
+## New Wallet \(CLI\) <a id="new-local-account-creation"></a>
 
-Creation of a new account is done as a function of a generated `bip39` mnemonic with 256 bits of entropy. You need to provide an account alias name of your choice \(keep it simple and clean\) and also need to  provide a passphrase:
+You need to provide a local account name of your choice and provide a passphrase. ****When creating an account, the CLI will ask you to provide a passphrase to encrypt the keystore file.‌ 
 
 ```text
-./hmy keys add example-account --passphrase
+./hmy keys add [LOCAL ACCOUNT NAME] --passphrase
 
 Enter passphrase:
 Repeat the passphrase:
 
 ```
 
-When creating keys this way, `hmy` will ask you to provide a passphrase.‌ The example-account is just a name you can pick, so pick something simple.  
-Make sure you keep track of this passphrase for future use because the passphrase is used to decrypt the keystore when signing transactions. Also make sure you save the seed phrase.
+{% hint style="danger" %}
+Remember your passphrase. You will need it to decrypt the account keystore in order to send transactions & perform other actions.
 
-To know where you wallet file has been created, just run the following command:
+Also save your seed phrase \(mnemonic\) somewhere as well, in case you lose your keystore.
+{% endhint %}
+
+### Backing Up Your Keystore File
 
 ```text
 ./hmy keys location
 ```
 
-The command above will return the location of your wallet file. Backup this wallet file somewhere else.‌
+The command above will return the location of your account keystore. You may want to create a backup of this file.‌
 
 You can check the list of wallets \(local accounts\) with the following command:
 
@@ -29,23 +32,20 @@ You can check the list of wallets \(local accounts\) with the following command:
 ./hmy keys list
 NAME                                  ADDRESS
 
-acc3                                  one1wh4p0kuc7unxez2z8f82zfnhsg4ty6dupqyjt2
-example-account                       one1658znfwf40epvy7e46cqrmzyy54
+example-account1                      one1wh4p0kuc7unxez2z8f82zfnhsg4ty6dupqyjt2
 ```
-
-NOTE: once you have created the wallet, please make sure to submit the wallet address to this [form](https://pangaeabyharmony.typeform.com/to/uPIehn).
 
 ## Checking Wallet Balances
 
-You can check wallet balances with the following command if you are running a node and are synced:
+If you are running a node and your node is synced to the latest block, use the following command to check your balance.
 
 ```text
-./hmy balances one1f33w8c3dupm30p4fhemy89646xw7xpxcnmy6e4
+./hmy balances [ONE ADDRESS]
 ```
 
-or the following command if you're not running a node or not in sync:
+If you are not running a node or your node is not synced, use the following command to check your balance.
 
 ```text
-./hmy --node="https://api.s0.os.hmny.io" balances one1f33w8c3dupm30p4fhemy89646xw7xpxcnmy6e4
+./hmy --node="https://api.s0.os.hmny.io" balances [ONE ADDRESS]
 ```
 
