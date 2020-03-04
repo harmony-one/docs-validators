@@ -1,154 +1,102 @@
 ---
-description: Sample commands for the staking workflow
+description: Example overall Validator flow
 ---
 
-# Cheat Sheet
+# Validator Cheat Sheet
 
-Below are sample commands used for the Staking Workflow.
+If you are new to setting up Validators, start [here](first-time-setup/).
 
-This example is using the Open Staking Test Network and actual private keys. Do not reuse the keys provided here.
+1. Access your cloud instance.
 
-#### Log into your node
-
-{% tabs %}
-{% tab title="OSTN" %}
 ```text
-#### PRE-REQUISITES ####
-# Create your AWS Instance
-# Have a terminal tool like ITERM2
-# Download your .pem file to a directory of your choosing
-# chmod 400 [.pem file]
-#### END PRE-REQUISITES ####
+ssh -i [KEY].pem [SSH ADDRESS]
+```
 
-#### Iniital Set up ####
+![AWS Connect Box](../.gitbook/assets/screen-shot-2020-03-03-at-9.40.54-pm.png)
 
-# Log in to your validator node
-cd /Users/johnwhitton/projects/staking/OSTN
-ssh -i "JOHN_OSTN_VALIDATOR_1.pem" ec2-user@ec2-18-217-173-222.us-east-2.compute.amazonaws.com
+2. Update software & install `tmux`
 
-# Update the software and install tmux
-sudo yum update
-sudo yum install tmux
+```text
+sudo yum update && sudo yum install tmux
+```
 
-# Download the CLI
+3. Download the Harmony CLI.
+
+```text
 curl -LO https://harmony.one/hmycli && mv hmycli hmy && chmod +x hmy
+```
 
-# Generate your BLS Key
-./hmy keys generate-bls-key
+4. Create a BLS Key
 
-#### Download and run NODE using https://harmony.one/node2.sh #####
+```text
+./hmy keys generate-bls-key --passphrase
+```
 
-# Start a tmux session
-tmux new-session -s node
+5. Download `node2.sh`
 
-# Download Node Software (as of writing OSTN is using node2.sh)
-curl -LO https://harmony.one/node2.sh
-mv node2.sh node.sh
-chmod a+x node.sh
+```text
+curl -LO https://harmony.one/node2.sh && mv node2.sh node.sh && chmod a+x node.sh
+```
 
-# If you already ran a validator & OSTN was refreshed
-sudo rm -rf harmony_db_*
-sudo rm -rf .dht*
-sudo rm -rf harmony
-sudo rm -rf md5sum.txt
+6. Start a new `tmux` session called `node`
 
-# Run your node - NOTE : Replace the BLS key below with your BLS key
-./node.sh -S -N staking -z -k be1d3bc4c5bc185bd12226912372007ae7baa573dcf1e7182e13728db121001cf33d6fd80969c39312eb50cf5b090d87.key
+```text
+tmux new -s node
+```
 
-# Detach your tmux session <CTRL>+b, then d
-# To get back to the tmux session
-tmux attach-session -t node
+7. Run the node
 
-#### END Download and run NODE using https://harmony.one/node.sh #####
+```text
+./node.sh -S -N staking -z -k [BLS KEY FILE].key
+```
 
-# Check that your node is syncing
+8. Detach from the tmux session by pressing CTRL and B at the same time, then press D.
+
+9. Check that your node is syncing \(block height &gt; 0\)
+
+```text
 ./hmy blockchain latest-header
-# And check that the block is greater than 1
-
-# Check the version of your harmony binary
-# It should align with http://watchdog.hmny.io/report-staking version on the left
-# e.g. Version-v5546-master-20191208.0-169-g3c4d5074
-LD_LIBRARY_PATH=. ./harmony -version
-
-#### Creating your Wallet and Staking ####
-# Create your validator wallet
-./hmy keys add johnv1-account
-
-# See your account
-./hmy keys list
-
-# Export private key (if needed to import into another wallet)
-./hmy keys export-private-key one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-
-# Show the location of the keys (you should copy this file to a safe backup)
-./hmy keys location
-
-# Fund your validator
-curl -X GET https://faucet.os.hmny.io/fund?address=one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-#{"success":true,"balances":[{"shard":0,"balance":"1000"},{"shard":1,"balance":"0"},{"shard":2,"balance":"0"},{"shard":3,"balance":"0"}]}
-
-# Register your validator
-./hmy --node="https://api.s0.os.hmny.io" staking create-validator --validator-addr one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 --name JohnWhittonV1 --identity johnIdentityV1 --website john@harmony.one --security-contact John --details "John the validator Shard 1" --rate 0.05 --max-rate 0.8 --max-change-rate 0.02 --min-self-delegation 10 --max-total-delegation 100 --bls-pubkeys 3bdc1c12828cdea5e9fa7bdd6ea808e2587ccf7c7a694f5437162b9d9496c74995470ad3d049f672bfdf79ee05e7bc14 --amount 30 --chain-id testnet
-
-# {
-#  "id": "21",
-#  "jsonrpc": "2.0",
-#  "result": {
-#    "blockHash": "0x5d44cfb6d85bbf81e2dcb0b6a8986522d443c5d6c9af1c43d1ad49efb9eac78a",
-#    "blockNumber": "0x2e3",
-#    "contractAddress": null,
-#    "cumulativeGasUsed": "0x512f00",
-#    "gasUsed": "0x512f00",
-#    "logs": [],
-#    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-#    "sender": "one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4",
-#    "status": "0x1",
-#    "transactionHash": "0xd20009ae47177202983d90838340e3a5c3d9b113a95e32e4cbda2b2e9cc89ac4",
-#    "transactionIndex": "0x0",
-#    "type": 0
-#  }
-#}
-
-# Check your validator has been registered
-./hmy --node="https://api.s0.os.hmny.io" blockchain validator all | grep one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-./hmy --node="https://api.s0.os.hmny.io" blockchain validator information one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-
-# Seeing all your delegators
-./hmy --node https://api.s0.os.hmny.io/ blockchain delegation by-validator one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 
-
-# Monitoring your rewards
-./hmy --node https://api.s0.os.hmny.io/ blockchain delegation by-delegator one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-
-# Collecting your rewards
-
-./hmy --node="https://api.s0.os.hmny.io" balances one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-./hmy --node="https://api.s0.os.hmny.io" staking collect-rewards --delegator-addr one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4 --chain-id testnet
-./hmy --node="https://api.s0.os.hmny.io" balances one1wwtelhx8nfuu50z0lttqtz4mfrlsn6jm97ske4
-
-# Unstaking your validator
-
-
-# Changing your validator profile
-
-# Staking your validator
-
-# Bidding for a slot
-
-# Check if your bid was succesful
-
-# Unstaking your validator
-
-# Collectiing your rewards
-
-```
-{% endtab %}
-
-{% tab title="Mainnet" %}
 ```
 
-```
-{% endtab %}
-{% endtabs %}
+10. Create a wallet
 
-#### 
+```text
+./hmy keys add [ACCOUNT NAME] --passphrase 
+```
+
+{% hint style="info" %}
+Use `./hmy keys list` to get your ONE address.
+{% endhint %}
+
+11. Get tokens for your validator
+
+```text
+curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
+```
+
+12. Create your Validator
+
+```text
+./hmy --node="https://api.s0.os.hmny.io" staking create-validator \
+    --validator-addr [ONE ADDRESS] --amount 10 \
+    --bls-pubkeys [BLS PUBLIC KEY1],[BLS PUBLIC KEY2] \
+    --name JohnWhitton --identity JohnIdentity --details "John The Validator" \
+    --security-contact John --website john@harmony.one \
+    --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \
+    --max-total-delegation 100 --min-self-delegation 10 --passphrase
+```
+
+13. Check that your ONE address exists as a validator
+
+```text
+./hmy --node="https://api.s0.os.hmny.io" blockchain validator all | grep [ONE ADDRESS]
+```
+
+14. Collect rewards
+
+```text
+./hmy --node="https://api.s0.os.hmny.io" staking collect-rewards --delegator-addr [ONE ADDRESS]
+```
+
+
 
