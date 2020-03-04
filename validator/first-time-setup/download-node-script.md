@@ -28,6 +28,15 @@ tmux new-session -s node
 You'll want to use a tmux session in order to leave your node running, while you are not connected to your instance.
 {% endhint %}
 
+{% hint style="danger" %}
+If you want to run a node on Ubuntu, also run the following commands to get the required libraries:
+
+```text
+curl -LO http://pub.harmony.one.s3.amazonaws.com/release/linux-x86_64/testnet/libcrypto.so.10
+sudo apt-get install libgmp-dev
+```
+{% endhint %}
+
 **2.**  Run the node.sh script with the following command. Once you do, it will ask for a passphrase for your BLS key file. Type your passphrase on the screen that follows and your node should be up and running.
 
 ```css
