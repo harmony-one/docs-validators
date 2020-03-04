@@ -52,7 +52,9 @@ Use `-k [BLS KEY FILE]` to specify which BLS key to run the node with.
 ./hmy blockchain latest-header
 ```
 
-To re-attach to your tmux session where your node.sh is running. use the following command:
+## Helpful Information
+
+To re-attach to your tmux session where your `node.sh` is running, use the following command:
 
 ```text
 tmux attach-session -t node

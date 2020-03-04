@@ -10,7 +10,6 @@ You can edit your validator’s information using the CLI with the following com
     --rate 0.3 --min-self-delegation 2 --max-total-delegation 30 \
     --remove-bls-key [BLS PUBLIC KEY] \
     --add-bls-key [BLS PUBLIC KEY] --passphrase
-
 ```
 
 The CLI will prompt you to enter your BLS key file password. Only the `--validator-addr` field is required; all other fields are optional.
