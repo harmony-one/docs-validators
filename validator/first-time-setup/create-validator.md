@@ -22,7 +22,7 @@ The faucet will fund 1000 ONE tokens on Shard 0, per account, per hour.
     --max-total-delegation 100 --min-self-delegation 10 --passphrase
 ```
 
-{% hint style="danger" %}
+{% hint style="info" %}
 Copy the entire command. Extra white spaces in the command could cause errors.
 {% endhint %}
 
@@ -53,6 +53,12 @@ The CLI will prompt you to enter your BLS key file password.
 `--max-total-delegation` is the maximum amount that can be delegated to this validator
 
 `--min-self-delegation` is the minimum amount of stake the validator must delegate to itself
+
+{% hint style="info" %}
+If you want to have spaces in your arguments, wrap the line in quotes 
+
+`--details "John The Validator"`
+{% endhint %}
 
 ### When does the validator become active?
 

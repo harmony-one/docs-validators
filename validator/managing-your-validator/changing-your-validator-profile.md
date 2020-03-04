@@ -8,48 +8,39 @@ You can edit your validator’s information using the CLI with the following com
     --name John --identity john --website john@harmony.one \
     --security-contact Alex --details "John the validator" \
     --rate 0.3 --min-self-delegation 2 --max-total-delegation 30 \
-    --remove-bls-key 0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611 \
-    --add-bls-key 0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611 \
-    --chain-id testnet --passphrase
+    --remove-bls-key [BLS PUBLIC KEY] \
+    --add-bls-key [BLS PUBLIC KEY] --passphrase
 
 ```
 
-The CLI will prompt you to enter your BLS key file password.
+The CLI will prompt you to enter your BLS key file password. Only the `--validator-addr` field is required; all other fields are optional.
 
-`--validator-addr` is the address that will receive the rewards
+`--validator-addr` is the validator address that you want to edit
 
-`--amount` is the initial amount you want to stake
+`--name` to change the name displayed on the Staking Explorer
 
-`--bls-pubkeys` takes a comma-separated list of BLS public keys \(not files\)
+`--identity` to change the identity field
 
-`--name` will be the name displayed on the Staking Explorer
+`--website` to change the website field
 
-`--identity` is additional information for the validator
+`--details` to change the details field
 
-`--details` is the description of the validator
+`--security-contact` to change the security contact field
 
-`--security-contact` is additional information for the validator
+`--rate` to change the current commission rate
 
-`--website` will be displayed on the Staking Explorer
+`--min-self-delegation` to change the minimum stake by the validator
 
-`--max-change-rate` is the maximum change that the validator can change their commission rate
+`--max-total-delegation` to change the maximum stake that the validator can have
 
-`--max-rate` is the maximum commission rate that the validator can set
+`--remove-bls-key` to remove a BLS public key associated with your validator
 
-`--rate` is the starting commission rate of the validator
-
-`--max-total-delegation` is the maximum amount that can be delegated to this validator
-
-`--min-self-delegation` is the minimum amount of stake the validator must delegate to itself
+`--add-bls-key` to add another BLS public key to your validator 
 
 {% hint style="info" %}
-* **validator-addr** - is the subcommand for editing the validator's address
-* **name, identity, website, security-contact, details** - are the description about validator
-* **rate** - the commission rate that needs to be changed. Note that, max-rate and max-change-rate cannot be changed.
-* **min-self-delegation** - is the minimum delegation the validator itself have to put
-* **max-total-delegation** - is the maximum delegation the validator will accept
-* **remove-bls-key** - the bls public key to remove from the validator’s list of bls public keys. When a key is removed the total stake will be evenly redistributed to the rest of the slots.
-* **add-bls-key** - the bls public key to add to the validator’s list of bls public keys. When a key is added, the total stake will be evenly redistributed again to all the slots.
+`--validator-addr`is the only field that is required.
+
+Sending the command without the arguments will leave those fields of your validator as is.
 {% endhint %}
 
 
