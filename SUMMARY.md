@@ -9,8 +9,8 @@
 * [First time setup](validator/first-time-setup/README.md)
   * [Cloud setup](validator/first-time-setup/cloud-setup/README.md)
     * [AWS](validator/first-time-setup/cloud-setup/aws.md)
-    * [Choosing a cloud provider](validator/first-time-setup/cloud-setup/choosing-a-cloud-provider.md)
-  * [Connect to instance](validator/first-time-setup/connect-to-instance.md)
+  * [Connect to instance](validator/first-time-setup/connect-to-instance/README.md)
+    * [AWS](validator/first-time-setup/connect-to-instance/aws.md)
   * [Download CLI](validator/first-time-setup/download-cli.md)
   * [Create BLS key](validator/first-time-setup/create-bls-key.md)
   * [Download node script](validator/first-time-setup/download-node-script/README.md)
@@ -30,10 +30,11 @@
   * [Delegating on staking explorer](validator/how-to-delegate/delegating-on-staking-explorer.md)
 * [Cheat Sheet](validator/cheat-sheet.md)
 
-## Monitoring and Reporting Tools
+## Extras
 
-* [Monitoring and Reporting Tools](monitoring-and-reporting-tools/reporting.md)
-* [Text Based User Interface \(TUI\)](monitoring-and-reporting-tools/text-based-user-interface-tui.md)
+* [Choosing a cloud provider](extras/choosing-a-cloud-provider.md)
+* [Monitoring and Reporting Tools](extras/reporting.md)
+* [Text Based User Interface \(TUI\)](extras/text-based-user-interface-tui.md)
 
 ## Additional Information
 
