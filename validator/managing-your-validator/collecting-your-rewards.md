@@ -1,27 +1,19 @@
-# Collecting your rewards
+# Collecting Rewards
 
-Collecting rewards can be performed using Harmony CLI as follows:
+You can collect your block rewards with the following command.
 
-{% tabs %}
-{% tab title="OSTN" %}
 ```text
-./hmy --node="https://api.s0.os.hmny.io" staking collect-rewards --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --chain-id testnet --passphrase
+./hmy --node="https://api.s0.os.hmny.io" staking collect-rewards \
+--delegator-addr [ONE ADDRESS] --passphrase
 ```
-{% endtab %}
 
-{% tab title="mainnet" %}
-```
-./hmy --node="https://api.s0.t.hmny.io" staking collect-rewards --delegator-addr one1pf75h0t4am90z8uv3y0dgunfqp4lj8wr3t5rsp --chain-id testnet --passphrase
-```
-{% endtab %}
-{% endtabs %}
+The CLI will prompt your for the passphrase of the delegation account.
 
-{% hint style="info" %}
+`--delegator-addr` is the account to collect rewards for
 
-
-* **collect-rewards** - is the subcommand for collecting rewards. All token rewards will be recorded in a separate balance for each validator/delegator pair. Delegators needs to issue collect-rewards command to move those token rewards into its own balance.
-* **delegator-addr** - is the delegator address to collect rewards
+{% hint style="danger" %}
+You can only collect ALL of your block rewards with this command.
 {% endhint %}
 
-This collect rewards transaction will be signed using the **delegator-addr**. Hence, the **delegator-addr** should exists in the keystore.
+
 
