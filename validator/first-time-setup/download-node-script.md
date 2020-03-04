@@ -60,3 +60,5 @@ To re-attach to your tmux session where your `node.sh` is running, use the follo
 tmux attach-session -t node
 ```
 
+[TMUX Cheatsheet](https://gist.github.com/henrik/1967800)
+
