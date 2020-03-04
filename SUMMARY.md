@@ -8,8 +8,9 @@
 
 * [First Time Setup](validator/first-time-setup/README.md)
   * [Cloud Guides](validator/first-time-setup/cloud-setup/README.md)
-    * [AWS Setup Guide](validator/first-time-setup/cloud-setup/aws.md)
-    * [Connecting to your AWS Instance](validator/first-time-setup/cloud-setup/aws-1.md)
+    * [AWS](validator/first-time-setup/cloud-setup/aws.md)
+    * [Vultr](validator/first-time-setup/cloud-setup/vultr.md)
+    * [Google Cloud](validator/first-time-setup/cloud-setup/google-cloud.md)
   * [HMY CLI Download](validator/first-time-setup/download-cli.md)
   * [Generating A BLS Key](validator/first-time-setup/generating-a-bls-key.md)
   * [Running a Node](validator/first-time-setup/download-node-script.md)
@@ -23,7 +24,7 @@
   * [Collecting Rewards](validator/managing-your-validator/collecting-your-rewards.md)
   * [Resetting Your Node](validator/managing-your-validator/resetting-your-node.md)
 * [Staking Explorer](validator/how-to-delegate/README.md)
-  * [Delegating](validator/how-to-delegate/delegating-on-staking-explorer.md)
+  * [Installation](validator/how-to-delegate/installation.md)
 * [Validator Cheat Sheet](validator/cheat-sheet.md)
 
 ## Extras
