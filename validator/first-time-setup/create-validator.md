@@ -56,10 +56,8 @@ The CLI will prompt you to enter your BLS key file password.
 
 {% hint style="danger" %}
 `--max-rate` and `--max-change-rate` can not be changed later.
-{% endhint %}
 
-{% hint style="danger" %}
-
+`--min-self-delegation` has to be at least 1 ONE.
 {% endhint %}
 
 ### When does the validator become active?
