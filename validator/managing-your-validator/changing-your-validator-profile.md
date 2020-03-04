@@ -3,7 +3,7 @@
 You can edit your validator’s information using the CLI with the following command.
 
 ```text
-./hmy --node="https://api.s0.p.hmny.io" staking edit-validator \
+./hmy --node="https://api.s0.os.hmny.io" staking edit-validator \
     --validator-addr [ONE ADDRESS] \
     --name John --identity john --website john@harmony.one \
     --security-contact Alex --details "John the validator" \
@@ -36,11 +36,11 @@ The CLI will prompt you to enter your BLS key file password. Only the `--validat
 
 `--add-bls-key` to add another BLS public key to your validator 
 
+`--active` to set validator eligibility for consensus committee selection
+
 {% hint style="info" %}
 `--validator-addr`is the only field that is required.
 
 Sending the command without the arguments will leave those fields of your validator as is.
 {% endhint %}
-
-
 

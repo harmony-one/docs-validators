@@ -1,24 +1,12 @@
-# Seeing all your Stakers
+# Seeing Stakers
 
+You can see the number of delegations to your validator with the following command.
 
-
-All delegations that are associated with a validator can be queried using Harmony CLI as follows:
-
-{% tabs %}
-{% tab title="OSTN" %}
 ```text
-./hmy --node="https://api.s0.os.hmny.io" blockchain delegation by-validator one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy
+./hmy --node="https://api.s0.os.hmny.io" blockchain delegation by-validator [VALIDATOR ADDRESS]
 ```
-{% endtab %}
 
-{% tab title="mainnet" %}
-```
-./hmy --node="https://api.s0.t.hmny.io" blockchain delegation by-validator one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy
-```
-{% endtab %}
-{% endtabs %}
-
-The output should show the delegations for the given validator:
+Example output below:
 
 ```text
 {
@@ -26,14 +14,22 @@ The output should show the delegations for the given validator:
   "jsonrpc": "2.0",
   "result": [
     {
-      "Undelegations": null,
-      "amount": 14000000000000000000,
-      "delegator_address": "0x0b585f8daefbc68a311fbd4cb20d9174ad174016",
-      "reward": 0,
-      "validator_address": "0x0b585f8daefbc68a311fbd4cb20d9174ad174016"
+      "Undelegations": [],
+      "amount": 93000000000000000000,
+      "delegator_address": "one1ctr58xue32peagud620tmthc95w5ch94vfhfgp",
+      "reward": 193348691324709180000,
+      "validator_address": "one1ctr58xue32peagud620tmthc95w5ch94vfhfgp"
+    },
+    {
+      "Undelegations": [],
+      "amount": 1.01e+22,
+      "delegator_address": "one1cg5d67v28m3s0xuph46y8w842yu9dzd7094zr5",
+      "reward": 646413329184000700000,
+      "validator_address": "one1ctr58xue32peagud620tmthc95w5ch94vfhfgp"
     }
   ]
 }
-
 ```
+
+
 
