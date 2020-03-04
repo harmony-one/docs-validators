@@ -1,7 +1,5 @@
 # Installation
 
-##  
-
 1. You can install the Harmony extension from the chrome web-store, [here](https://chrome.google.com/webstore/detail/harmony/dmknnpkhnockodmnclcellfiilmklimd). 
 2. Click on the Harmony icon and select either `create a new address`  or `Recover with backup code` and fill in the fields 
 3. With in the extension click on `Go to Harmony` and select `use Account` on your account which will take you to the staking explorer 
