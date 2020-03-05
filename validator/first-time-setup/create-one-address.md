@@ -36,9 +36,11 @@ NAME                                  ADDRESS
 example-account1                      one1wh4p0kuc7unxez2z8f82zfnhsg4ty6dupqyjt2
 ```
 
+
+
 ## Helpful Information
 
-### Check your account balance
+### Checking your account balance
 
 If you are running a node and your node is synced to the latest block, use the following command to check your balance.
 
