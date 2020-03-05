@@ -16,8 +16,8 @@ The faucet will fund 1000 ONE tokens on Shard 0, per account, per hour.
 ./hmy --node="https://api.s0.os.hmny.io" staking create-validator \
     --validator-addr [ONE ADDRESS] --amount 10 \
     --bls-pubkeys [BLS PUBLIC KEY1],[BLS PUBLIC KEY2] \
-    --name JohnWhitton --identity JohnIdentity --details "John The Validator" \
-    --security-contact John --website john@harmony.one \
+    --name [NAME] --identity [IDENTITY] --details "DETAILS" \
+    --security-contact CONTACT --website YOUR-WEBSITE.COM \
     --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \
     --max-total-delegation 100 --min-self-delegation 10 --passphrase
 ```
@@ -55,7 +55,7 @@ The CLI will prompt you to enter your BLS key file password.
 `--min-self-delegation` is the minimum amount of stake the validator must delegate to itself
 
 {% hint style="danger" %}
-`--max-rate` and `--max-change-rate` can not be changed later.
+`--max-rate` and `--max-change-rate` cannot be changed later.
 
 `--min-self-delegation` has to be at least 1 ONE.
 {% endhint %}
