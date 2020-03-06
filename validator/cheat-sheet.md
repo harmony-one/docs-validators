@@ -70,12 +70,24 @@ Use `./hmy keys list` to get your ONE address.
 
 11. Get tokens for your validator
 
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
 ```text
 curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
 ```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```
+curl -X GET https://faucet.ps.hmny.io/fund?address=[ONE ADDRESS]
+```
+{% endtab %}
+{% endtabs %}
 
 12. Create your Validator
 
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
 ```text
 ./hmy --node="https://api.s0.os.hmny.io" staking create-validator \
     --validator-addr [ONE ADDRESS] --amount 10 \
@@ -85,18 +97,52 @@ curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
     --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \
     --max-total-delegation 100 --min-self-delegation 10 --passphrase
 ```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```
+./hmy --node="https://api.s0.ps.hmny.io" staking create-validator \
+    --validator-addr [ONE ADDRESS] --amount 10 \
+    --bls-pubkeys [BLS PUBLIC KEY1],[BLS PUBLIC KEY2] \
+    --name JohnWhitton --identity JohnIdentity --details "John The Validator" \
+    --security-contact John --website john@harmony.one \
+    --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \
+    --max-total-delegation 100 --min-self-delegation 10 --passphrase
+```
+{% endtab %}
+{% endtabs %}
 
 13. Check that your ONE address exists as a validator
 
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
 ```text
 ./hmy --node="https://api.s0.os.hmny.io" blockchain validator all | grep [ONE ADDRESS]
 ```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```
+./hmy --node="https://api.s0.ps.hmny.io" blockchain validator all | grep [ONE ADDRESS]
+```
+{% endtab %}
+{% endtabs %}
 
 14. Collect rewards
 
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
 ```text
 ./hmy --node="https://api.s0.os.hmny.io" staking collect-rewards --delegator-addr [ONE ADDRESS]
 ```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```
+./hmy --node="https://api.s0.ps.hmny.io" staking collect-rewards --delegator-addr [ONE ADDRESS]
+```
+{% endtab %}
+{% endtabs %}
 
 
 

@@ -4,9 +4,19 @@
 
 In order to continue and create your validator, you will need to have ONE tokens in your Shard 0 balance. To get tokens from our Faucet smart contract, use the following command:
 
-```text
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
+```
 curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
 ```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```text
+curl -X GET https://faucet.ps.hmny.io/fund?address=[ONE ADDRESS]
+```
+{% endtab %}
+{% endtabs %}
 
 The faucet will fund 1000 ONE tokens on Shard 0, per account, per hour.
 
@@ -14,6 +24,8 @@ The faucet will fund 1000 ONE tokens on Shard 0, per account, per hour.
 
 Use the following command to create a validator. Change the fields to reflect your validator's address and details.
 
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
 ```text
 ./hmy --node="https://api.s0.os.hmny.io" staking create-validator \
     --validator-addr [ONE ADDRESS] --amount 10 \
@@ -23,6 +35,20 @@ Use the following command to create a validator. Change the fields to reflect yo
     --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \
     --max-total-delegation 100 --min-self-delegation 10 --passphrase
 ```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```
+./hmy --node="https://api.s0.ps.hmny.io" staking create-validator \
+    --validator-addr [ONE ADDRESS] --amount 10 \
+    --bls-pubkeys [BLS PUBLIC KEY1],[BLS PUBLIC KEY2] \
+    --name [NAME] --identity [IDENTITY] --details "DETAILS" \
+    --security-contact CONTACT --website YOUR-WEBSITE.COM \
+    --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \
+    --max-total-delegation 100 --min-self-delegation 10 --passphrase
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 Copy the entire command. Extra white spaces in the command could cause errors.
@@ -70,9 +96,19 @@ Example output below:
 
 Use the below command to check your validator information
 
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
 ```text
 ./hmy --node=https://api.s0.os.hmny.io/ blockchain validator information [ONE ADDRESS]
 ```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```
+./hmy --node=https://api.s0.ps.hmny.io/ blockchain validator information [ONE ADDRESS]
+```
+{% endtab %}
+{% endtabs %}
 
 Example output below:
 
