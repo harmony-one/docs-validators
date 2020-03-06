@@ -8,9 +8,19 @@ description: Using node.sh
 
 **1.** Run the following command to download the node.sh script:
 
+{% tabs %}
+{% tab title="Open Staking Network" %}
+```text
+curl https://raw.githubusercontent.com/harmony-one/harmony/t3/scripts/node.sh -O
+```
+{% endtab %}
+
+{% tab title="Partner Network" %}
 ```text
 curl -LO https://harmony.one/node2.sh && mv node2.sh node.sh && chmod a+x node.sh
 ```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 Node2.sh is a temporary script just for the Open Staking Testnet.
