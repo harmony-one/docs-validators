@@ -30,7 +30,7 @@ For the MacOS version, use `./hmy.sh` instead of `./hmy` for all commands.
 
 #### To double-check that it works:
 
-Run `./hmy cookbook`to see some commonly used commands.Output should look similar to below.
+Run `./hmy cookbook`to see some commonly used commands. Sample output below.
 
 ```text
 Cookbook of Usage
