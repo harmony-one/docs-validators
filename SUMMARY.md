@@ -23,7 +23,6 @@
   * [Undelegating To A Validator](validator/managing-your-validator/unstaking-your-validator.md)
   * [Seeing Stakers](validator/managing-your-validator/seeing-all-your-stakers.md)
   * [Collecting Rewards](validator/managing-your-validator/collecting-your-rewards.md)
-  * [How To Check Node Status](validator/managing-your-validator/how-to-check-node-status.md)
   * [Resetting Your Node](validator/managing-your-validator/resetting-your-node.md)
 * [Staking Explorer](validator/how-to-delegate/README.md)
   * [Installation](validator/how-to-delegate/installation.md)
