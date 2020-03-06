@@ -12,6 +12,8 @@ The faucet will fund 1000 ONE tokens on Shard 0, per account, per hour.
 
 ## Creating a Validator
 
+Use the following command to create a validator. Change the fields to reflect your validator's address and details.
+
 ```text
 ./hmy --node="https://api.s0.os.hmny.io" staking create-validator \
     --validator-addr [ONE ADDRESS] --amount 10 \
@@ -26,33 +28,21 @@ The faucet will fund 1000 ONE tokens on Shard 0, per account, per hour.
 Copy the entire command. Extra white spaces in the command could cause errors.
 {% endhint %}
 
-The CLI will prompt you to enter your BLS key file password.
+### The create-validator command fields
 
-`--validator-addr` is the address that will receive the rewards
-
-`--amount` is the initial amount you want to stake
-
-`--bls-pubkeys` takes a comma-separated list of BLS public keys \(not files\)
-
-`--name` will be the name displayed on the Staking Explorer
-
-`--identity` is additional information for the validator
-
-`--details` is the description of the validator
-
-`--security-contact` is additional information for the validator
-
-`--website` will be displayed on the Staking Explorer
-
-`--max-change-rate` is the maximum increase the validator can add to their commission rate
-
-`--max-rate` is the maximum commission rate that the validator can set
-
-`--rate` is the starting commission rate of the validator
-
-`--max-total-delegation` is the maximum amount that can be delegated to this validator
-
-`--min-self-delegation` is the minimum amount of stake the validator must delegate to itself
+* `--validator-addr` is the address that will receive the rewards
+* `--amount` is the initial amount you want to stake
+* `--bls-pubkeys` takes a comma-separated list of BLS public keys \(not files\)
+* `--name` will be the name displayed on the Staking Explorer
+* `--identity` is additional information for the validator
+* `--details` is the description of the validator
+* `--security-contact` is additional information for the validator
+* `--website` will be displayed on the Staking Explorer
+* `--max-change-rate` is the maximum increase the validator can add to their commission rate
+* `--max-rate` is the maximum commission rate that the validator can set
+* `--rate` is the starting commission rate of the validator
+* `--max-total-delegation` is the maximum amount that can be delegated to this validator
+* `--min-self-delegation` is the minimum amount of stake the validator must delegate to itself
 
 {% hint style="danger" %}
 `--max-rate` and `--max-change-rate` cannot be changed later.
