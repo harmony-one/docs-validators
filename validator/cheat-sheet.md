@@ -144,5 +144,21 @@ curl -X GET https://faucet.ps.hmny.io/fund?address=[ONE ADDRESS]
 {% endtab %}
 {% endtabs %}
 
+15. Check validator information for active flag / availability \(block signed\) / etc ...
+
+{% tabs %}
+{% tab title="Open Staking Testnet" %}
+```
+./hmy --node="https://api.s0.os.hmny.io" validator information [VALIDATOR ONE ADDRESS]
+```
+{% endtab %}
+
+{% tab title="Partner Testnet" %}
+```
+./hmy --node="https://api.s0.ps.hmny.io" validator information [VALIDATOR ONE ADDRESS]
+```
+{% endtab %}
+{% endtabs %}
+
 
 
