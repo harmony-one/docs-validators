@@ -17,7 +17,7 @@ curl -LO https://harmony.one/node2.sh && mv node2.sh node.sh && chmod a+x node.s
 
 {% tab title="Partner Network" %}
 ```text
-curl -LO https://raw.githubusercontent.com/harmony-one/harmony/t3/scripts/node.sh
+curl -LO https://raw.githubusercontent.com/harmony-one/harmony/t3/scripts/node.sh && chmod a+x node.sh
 ```
 {% endtab %}
 {% endtabs %}
