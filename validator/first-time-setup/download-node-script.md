@@ -63,7 +63,17 @@ Use `-N [NETWORK]` to specify which network to connect to.
 Use `-k [BLS KEY FILE]` to specify which BLS key to run the node with.
 {% endhint %}
 
-Alternatively you can run the node using multiple BLS keys if you want. Keys are loaded from `.hmy/blskeys` folder which has to be created first:
+**3.** Detach your "node" tmux session by press \[**Ctrl\]+b**, releasing and and then press **d**. Detaching from your session will allow you to safely disconnect from your instance, while leaving your node running in the cloud.
+
+**4.** To check if your node is syncing properly, run the below command and check that the block height is greater than 0.
+
+```text
+./hmy blockchain latest-header
+```
+
+## Multiple BLS keys
+
+Optionally, you can run the node using multiple BLS keys if you want. Keys are loaded from `.hmy/blskeys` folder which has to be created first:
 
 ```text
 mkdir .hmy/blskeys
@@ -79,14 +89,6 @@ You can now run the node using parameter **-M** for multiple BLS keys. Parameter
 
 ```text
 ./node.sh -S -N staking -z -M
-```
-
-**3.** Detach your "node" tmux session by press \[**Ctrl\]+b**, releasing and and then press **d**. Detaching from your session will allow you to safely disconnect from your instance, while leaving your node running in the cloud.
-
-**4.** To check if your node is syncing properly, run the below command and check that the block height is greater than 0.
-
-```text
-./hmy blockchain latest-header
 ```
 
 ## Helpful Information
