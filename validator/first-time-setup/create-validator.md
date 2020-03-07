@@ -52,6 +52,14 @@ Use the following command to create a validator. Change the fields to reflect yo
 
 {% hint style="info" %}
 Copy the entire command. Extra white spaces in the command could cause errors.
+
+Name, identity, details, security-contact and website need to be put in double quotes if there is more than one word separated by space \(example --name "John the validator"\).
+{% endhint %}
+
+
+
+{% hint style="info" %}
+Name, identity, details, security-contact and website need to be put in double quotes if there is more than one word separated by space \(example --name "John the validator"\).
 {% endhint %}
 
 ### The create-validator command fields
