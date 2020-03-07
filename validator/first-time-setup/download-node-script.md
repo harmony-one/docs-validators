@@ -85,6 +85,14 @@ Now move all the [previously created BLS key\(s\)](https://docs.harmony.one/home
 mv *.key .hmy/blskeys
 ```
 
+{% hint style="warning" %}
+Make sure all your BLS keys belong to the same shard when using multiple BLS keys. You can use the command bellow to check each one of them:
+{% endhint %}
+
+```text
+./hmy utility shard-for-bls [BLS KEY FILE].key
+```
+
 You can now run the node using parameter **-M** for multiple BLS keys. Parameter **-k** will not be used anymore as we are loading multiple BLS keys here:
 
 ```text
