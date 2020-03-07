@@ -71,12 +71,12 @@ Use `-k [BLS KEY FILE]` to specify which BLS key to run the node with.
 ./hmy blockchain latest-header
 ```
 
-## Multiple BLS keys
+## Multiple BLS keys \(Optional\)
 
 Optionally, you can run the node using multiple BLS keys if you want. Keys are loaded from `.hmy/blskeys` folder which has to be created first:
 
 ```text
-mkdir .hmy/blskeys
+mkdir -p .hmy/blskeys
 ```
 
 Now move all the [previously created BLS key\(s\)](https://docs.harmony.one/home/validators/first-time-setup/generating-a-bls-key) to this new folder:
