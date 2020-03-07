@@ -93,6 +93,13 @@ Make sure all your BLS keys belong to the same shard when using multiple BLS key
 ./hmy utility shard-for-bls [BLS PUBLIC KEY]
 ```
 
+Example with the output for a specific BLS public key:
+
+```text
+./hmy utility shard-for-bls 0f9b2407d0d54e6c7dedabce4f03bbc0e7f69c112d0a56c28ba811fe62e0f303cf4c804136da0d374273e1c52745c800
+{"shard-id":0}
+```
+
 You can now run the node using parameter **-M** for multiple BLS keys. Parameter **-k** will not be used anymore as we are loading multiple BLS keys here:
 
 ```text
