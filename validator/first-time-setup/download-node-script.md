@@ -71,7 +71,7 @@ Use `-k [BLS KEY FILE]` to specify which BLS key to run the node with.
 ./hmy blockchain latest-header
 ```
 
-## Multiple BLS keys \(Optional\)
+## Multiple BLS Keys \(Optional\)
 
 Optionally, you can run the node using multiple BLS keys if you want. Keys are loaded from `.hmy/blskeys` folder which has to be created first:
 
