@@ -90,7 +90,7 @@ Make sure all your BLS keys belong to the same shard when using multiple BLS key
 {% endhint %}
 
 ```text
-./hmy utility shard-for-bls [BLS KEY FILE].key
+./hmy utility shard-for-bls [BLS PUBLIC KEY]
 ```
 
 You can now run the node using parameter **-M** for multiple BLS keys. Parameter **-k** will not be used anymore as we are loading multiple BLS keys here:
