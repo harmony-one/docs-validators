@@ -83,7 +83,7 @@ On the Open Staking Testnet, a validator will be set to active at the next epoch
 Once your validator is active and has been elected, the validator will receive rewards and you will be able to see "BINGO" in the logs.
 
 ```text
-tail -n1000 latest/zerolog-validator-*.log | grep -i BINGO
+tail -n 1000 latest/zerolog-validator-*.log | grep -i BINGO
 ```
 
 Example output below:
