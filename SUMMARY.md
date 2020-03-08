@@ -33,6 +33,7 @@
 * [Choosing A Cloud Provider](extras/choosing-a-cloud-provider.md)
 * [Monitoring and Reporting Tools](extras/reporting.md)
 * [Text Based User Interface \(TUI\)](extras/text-based-user-interface-tui.md)
+* [Why am I not elected in the EPOS committee](extras/why-am-i-not-elected-in-the-epos-committee.md)
 
 ## Additional Information
 
