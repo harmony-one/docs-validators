@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Validator Documentation](README.md)
 * [Archived/Oboslete](archived-oboslete/README.md)
   * [Validator](archived-oboslete/validator-1/README.md)
     * [Community](archived-oboslete/validator-1/community-1.md)
