@@ -24,6 +24,7 @@
   * [Seeing Stakers](validator/managing-your-validator/seeing-all-your-stakers.md)
   * [Collecting Rewards](validator/managing-your-validator/collecting-your-rewards.md)
   * [Resetting Your Node](validator/managing-your-validator/resetting-your-node.md)
+  * [Adding A Validator Logo](validator/managing-your-validator/adding-a-validator-logo.md)
 * [Staking Explorer](validator/how-to-delegate/README.md)
   * [Installation](validator/how-to-delegate/installation.md)
 * [Validator Cheat Sheet](validator/cheat-sheet.md)
